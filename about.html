@@ -305,5 +305,16 @@
         });
     </script>
 
+<!-- Cookie Banner -->
+    <div id="cookieBanner" class="fixed bottom-0 left-0 right-0 z-[9998] bg-white border-t border-zinc-200 shadow-2xl px-6 py-4 transform translate-y-full transition-transform duration-500">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-sm text-zinc-600"><iconify-icon icon="solar:cookie-linear" width="18" class="text-gold-500 mr-1 align-middle"></iconify-icon> We use cookies to enhance your browsing experience.</p>
+            <div class="flex gap-3">
+                <button onclick="document.getElementById('cookieBanner').style.transform='translateY(100%)';localStorage.setItem('cookies','rejected')" class="px-4 py-2 text-xs font-medium text-zinc-500 border border-zinc-300 rounded-full hover:bg-zinc-50 transition-colors">Reject</button>
+                <button onclick="document.getElementById('cookieBanner').style.transform='translateY(100%)';localStorage.setItem('cookies','accepted')" class="px-4 py-2 text-xs font-medium text-white bg-gold-500 rounded-full hover:bg-gold-600 transition-colors">Accept All</button>
+            </div>
+        </div>
+    </div>
+    <script>if(!localStorage.getItem('cookies')){setTimeout(()=>{document.getElementById('cookieBanner').style.transform='translateY(0)'},1500)}</script>
 </body>
 </html>
