@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2679QSWYBG"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-2679QSWYBG');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - HB Global Solutions</title>
+    <meta name="description" content="Expert tips on web design, SEO, digital marketing and business growth in Belgium. Read the HB Global Solutions blog.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23C5A55A'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-weight='bold' font-size='14' fill='white'>HB</text></svg>">
+    <meta name="theme-color" content="#C5A55A">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config={theme:{extend:{colors:{gold:{50:'#FBF7EC',100:'#F5ECD3',200:'#EBDAA8',300:'#DFC57A',400:'#D4B155',500:'#C5A55A',600:'#A8893A',700:'#7F6A2E',800:'#574A20',900:'#2E2711'}}}}}</script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+        .font-serif-display{font-family:'Playfair Display',Georgia,serif}.font-sans{font-family:'Inter',sans-serif}html{scroll-behavior:smooth}
+        .mobile-menu{max-height:0;overflow:hidden;transition:max-height .3s ease-out}.mobile-menu.open{max-height:500px}
+        [data-scroll]{opacity:0;transition:opacity .8s cubic-bezier(.4,0,.2,1),transform .8s cubic-bezier(.4,0,.2,1)}[data-scroll].is-visible{opacity:1;transform:none!important}
+        [data-scroll="fade-up"]{transform:translateY(40px)}[data-scroll-delay="200"]{transition-delay:.2s}[data-scroll-delay="400"]{transition-delay:.4s}
+    </style>
+</head>
+<body class="bg-[#FAFAF8] text-zinc-800 antialiased selection:bg-gold-100 selection:text-gold-900 font-sans">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-zinc-200/80">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-9 h-9 border-2 border-gold-500 text-gold-500 flex items-center justify-center rounded-sm"><span class="text-xs font-bold tracking-tighter font-serif-display">HB</span></div>
+                <span class="text-sm font-semibold text-zinc-900 tracking-tight hidden sm:inline">HB Global Solutions</span>
+            </a>
+            <div class="hidden lg:flex items-center gap-7">
+                <a href="index.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Home</a>
+                <a href="services.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Services</a>
+                <a href="portfolio.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Portfolio</a>
+                <a href="pricing.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Pricing</a>
+                <a href="blog.html" class="text-xs font-medium text-gold-600 uppercase tracking-wider">Blog</a>
+                <a href="about.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">About</a>
+                <a href="contact.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Contact</a>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="contact.html" class="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 bg-gold-500 text-white text-xs font-semibold rounded-full hover:bg-gold-600 transition-all uppercase tracking-wider shadow-sm">Get Started</a>
+                <button onclick="document.getElementById('mobileMenu').classList.toggle('open')" class="lg:hidden flex items-center justify-center w-9 h-9 text-zinc-700">
+                    <iconify-icon icon="solar:hamburger-menu-linear" width="22"></iconify-icon>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="mobile-menu lg:hidden bg-white border-t border-zinc-100">
+            <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
+                <a href="index.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">Home</a>
+                <a href="services.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">Services</a>
+                <a href="portfolio.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">Portfolio</a>
+                <a href="pricing.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">Pricing</a>
+                <a href="blog.html" class="text-sm font-medium text-gold-600 py-2.5 border-b border-zinc-100">Blog</a>
+                <a href="about.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">About</a>
+                <a href="contact.html" class="mt-3 px-4 py-3 bg-gold-500 text-white text-sm font-semibold rounded-full text-center uppercase tracking-wider">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-28 pb-16 bg-gradient-to-b from-gold-50/30 to-transparent">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-xs font-semibold text-gold-600 uppercase tracking-[0.2em] mb-4" data-scroll="fade-up">Insights & Tips</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-zinc-900 mb-4 font-serif-display" data-scroll="fade-up" data-scroll-delay="200">Our <em class="text-gold-500 italic">Blog</em></h1>
+            <p class="text-zinc-500 max-w-xl mx-auto" data-scroll="fade-up" data-scroll-delay="400">Expert advice on web design, SEO, and growing your business online.</p>
+            <div class="mt-4 text-sm text-zinc-400"><a href="index.html" class="hover:text-gold-500 transition-colors">Home</a> <span class="mx-2">/</span> <span class="text-zinc-700">Blog</span></div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="bg-white rounded-2xl overflow-hidden border border-zinc-100 shadow-sm hover:shadow-xl transition-all duration-300 grid grid-cols-1 lg:grid-cols-2" data-scroll="fade-up">
+                <div class="h-64 lg:h-auto bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop');"></div>
+                <div class="p-8 lg:p-12 flex flex-col justify-center">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="px-3 py-1 bg-gold-50 text-gold-700 text-xs font-medium rounded-full border border-gold-100">Featured</span>
+                        <span class="text-xs text-zinc-400">April 10, 2026</span>
+                    </div>
+                    <h2 class="text-2xl font-bold text-zinc-900 mb-3 font-serif-display">5 Reasons Why Your Business Needs a Professional Website in 2026</h2>
+                    <p class="text-zinc-500 text-sm leading-relaxed mb-6">In today's digital-first world, your website is often the first impression potential customers have of your business. Discover why investing in a professional website is no longer optional — it's essential for growth.</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-gold-100 rounded-full flex items-center justify-center text-gold-700 text-xs font-bold font-serif-display">HB</div>
+                        <div>
+                            <p class="text-xs font-medium text-zinc-900">HB Global Solutions</p>
+                            <p class="text-xs text-zinc-400">5 min read</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="py-12">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Article 1 -->
+            <article class="bg-white rounded-2xl overflow-hidden border border-zinc-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group" data-scroll="fade-up">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1562577309-4932fdd64cd1?q=80&w=500&auto=format&fit=crop');"></div>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="px-2 py-0.5 bg-emerald-50 text-emerald-700 text-xs font-medium rounded-full">SEO</span>
+                        <span class="text-xs text-zinc-400">April 8, 2026</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-zinc-900 mb-2 group-hover:text-gold-600 transition-colors">How to Rank #1 on Google in Belgium: A Complete SEO Guide</h3>
+                    <p class="text-sm text-zinc-500 mb-4 line-clamp-3">Learn the proven strategies to improve your Google ranking in the Belgian market. From local SEO to content optimization, we cover everything.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-zinc-400">7 min read</span>
+                        <span class="text-xs font-medium text-gold-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Read more <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="bg-white rounded-2xl overflow-hidden border border-zinc-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group" data-scroll="fade-up" data-scroll-delay="200">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=500&auto=format&fit=crop');"></div>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">Marketing</span>
+                        <span class="text-xs text-zinc-400">April 5, 2026</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-zinc-900 mb-2 group-hover:text-gold-600 transition-colors">Social Media Marketing for Small Businesses: Where to Start</h3>
+                    <p class="text-sm text-zinc-500 mb-4 line-clamp-3">Not sure which platforms to focus on? We break down the best social media strategies for small businesses in Belgium and beyond.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-zinc-400">5 min read</span>
+                        <span class="text-xs font-medium text-gold-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Read more <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="bg-white rounded-2xl overflow-hidden border border-zinc-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group" data-scroll="fade-up" data-scroll-delay="400">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=500&auto=format&fit=crop');"></div>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="px-2 py-0.5 bg-purple-50 text-purple-700 text-xs font-medium rounded-full">Business</span>
+                        <span class="text-xs text-zinc-400">April 1, 2026</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-zinc-900 mb-2 group-hover:text-gold-600 transition-colors">Starting a Business in Belgium: The Complete 2026 Guide</h3>
+                    <p class="text-sm text-zinc-500 mb-4 line-clamp-3">Everything you need to know about company creation in Belgium — from legal requirements to digital setup and launching your first marketing campaign.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-zinc-400">10 min read</span>
+                        <span class="text-xs font-medium text-gold-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Read more <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="bg-white rounded-2xl overflow-hidden border border-zinc-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group" data-scroll="fade-up">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1555421689-d68471e189f2?q=80&w=500&auto=format&fit=crop');"></div>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="px-2 py-0.5 bg-amber-50 text-amber-700 text-xs font-medium rounded-full">Web Design</span>
+                        <span class="text-xs text-zinc-400">March 28, 2026</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-zinc-900 mb-2 group-hover:text-gold-600 transition-colors">Web Design Trends to Watch in 2026</h3>
+                    <p class="text-sm text-zinc-500 mb-4 line-clamp-3">From AI-powered personalization to micro-interactions and dark mode, discover the design trends that will dominate the web this year.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-zinc-400">6 min read</span>
+                        <span class="text-xs font-medium text-gold-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Read more <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="bg-white rounded-2xl overflow-hidden border border-zinc-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group" data-scroll="fade-up" data-scroll-delay="200">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f2?q=80&w=500&auto=format&fit=crop');"></div>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="px-2 py-0.5 bg-rose-50 text-rose-700 text-xs font-medium rounded-full">E-Commerce</span>
+                        <span class="text-xs text-zinc-400">March 22, 2026</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-zinc-900 mb-2 group-hover:text-gold-600 transition-colors">How to Launch a Successful E-Commerce Store in Belgium</h3>
+                    <p class="text-sm text-zinc-500 mb-4 line-clamp-3">From choosing the right platform to payment integration and shipping logistics, here's your roadmap to e-commerce success.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-zinc-400">8 min read</span>
+                        <span class="text-xs font-medium text-gold-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Read more <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="bg-white rounded-2xl overflow-hidden border border-zinc-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group" data-scroll="fade-up" data-scroll-delay="400">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=500&auto=format&fit=crop');"></div>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="px-2 py-0.5 bg-teal-50 text-teal-700 text-xs font-medium rounded-full">Automation</span>
+                        <span class="text-xs text-zinc-400">March 15, 2026</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-zinc-900 mb-2 group-hover:text-gold-600 transition-colors">5 Automations Every Small Business Should Set Up Today</h3>
+                    <p class="text-sm text-zinc-500 mb-4 line-clamp-3">Save hours every week with these essential business automations. From email sequences to invoicing, start working smarter not harder.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-zinc-400">4 min read</span>
+                        <span class="text-xs font-medium text-gold-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Read more <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon></span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="py-20 bg-zinc-900">
+        <div class="max-w-3xl mx-auto px-6 text-center" data-scroll="fade-up">
+            <iconify-icon icon="solar:letter-bold-duotone" width="40" class="text-gold-400 mb-4"></iconify-icon>
+            <h2 class="text-3xl font-bold text-white mb-3 font-serif-display">Stay <em class="text-gold-400 italic">Updated</em></h2>
+            <p class="text-zinc-400 mb-8">Get the latest tips on web design, SEO and digital marketing delivered to your inbox.</p>
+            <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed ✓'; this.querySelector('input').value='';">
+                <input type="email" placeholder="Your email address" required class="flex-1 px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-full text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-gold-500">
+                <button type="submit" class="px-6 py-3 bg-gold-500 text-white text-sm font-semibold rounded-full hover:bg-gold-600 transition-all">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-900 text-white pt-16 pb-8 border-t border-zinc-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-9 h-9 border-2 border-gold-500 text-gold-500 flex items-center justify-center rounded-sm"><span class="text-xs font-bold tracking-tighter font-serif-display">HB</span></div>
+                        <span class="text-sm font-semibold text-white">HB Global Solutions</span>
+                    </div>
+                    <p class="text-sm text-zinc-400 leading-relaxed">We help entrepreneurs build, launch and grow their business online.</p>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold mb-4 text-gold-400">Pages</h4>
+                    <div class="flex flex-col gap-2">
+                        <a href="index.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Home</a>
+                        <a href="services.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Services</a>
+                        <a href="portfolio.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Portfolio</a>
+                        <a href="blog.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Blog</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold mb-4 text-gold-400">Services</h4>
+                    <div class="flex flex-col gap-2">
+                        <a href="services.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Website Creation</a>
+                        <a href="services.html" class="text-sm text-zinc-400 hover:text-white transition-colors">SEO Optimization</a>
+                        <a href="services.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Digital Marketing</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold mb-4 text-gold-400">Contact</h4>
+                    <div class="flex flex-col gap-2">
+                        <a href="tel:+32485050654" class="text-sm text-zinc-400 hover:text-white transition-colors">+32 485 050 654</a>
+                        <a href="mailto:hb.globalsolutions@icloud.com" class="text-sm text-zinc-400 hover:text-white transition-colors">hb.globalsolutions@icloud.com</a>
+                        <a href="https://wa.me/32485050654" class="text-sm text-zinc-400 hover:text-white transition-colors">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-zinc-800 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
+                <p class="text-xs text-zinc-500">&copy; 2026 HB Global Solutions. All rights reserved.</p>
+                <div class="flex gap-3">
+                    <a href="https://www.instagram.com/hbglobal.solutions/" target="_blank" rel="noopener" class="w-9 h-9 bg-zinc-800 hover:bg-gold-500 rounded-lg flex items-center justify-center transition-colors"><iconify-icon icon="mdi:instagram" width="18" class="text-zinc-400"></iconify-icon></a>
+                    <a href="https://www.linkedin.com/in/hubert-nob-nonga-93685997/" target="_blank" rel="noopener" class="w-9 h-9 bg-zinc-800 hover:bg-gold-500 rounded-lg flex items-center justify-center transition-colors"><iconify-icon icon="mdi:linkedin" width="18" class="text-zinc-400"></iconify-icon></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/32485050654" target="_blank" rel="noopener" class="fixed bottom-8 left-8 w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-all z-50"><iconify-icon icon="mdi:whatsapp" width="28"></iconify-icon></a>
+    <!-- Back to top -->
+    <button onclick="window.scrollTo({top:0,behavior:'smooth'})" id="backToTop" class="fixed bottom-8 right-8 w-10 h-10 bg-gold-500 text-white rounded-full shadow-lg flex items-center justify-center hover:bg-gold-600 transition-all z-50 opacity-0 pointer-events-none"><iconify-icon icon="solar:arrow-up-linear" width="18"></iconify-icon></button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded',()=>{
+            document.querySelectorAll('[data-scroll]').forEach(el=>{
+                new IntersectionObserver((entries,obs)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');obs.unobserve(e.target)}})},{threshold:.15,rootMargin:'0px 0px -50px 0px'}).observe(el)
+            });
+            const btn=document.getElementById('backToTop');
+            window.addEventListener('scroll',()=>{btn.style.opacity=window.scrollY>400?'1':'0';btn.style.pointerEvents=window.scrollY>400?'auto':'none'},{passive:true});
+            const nav=document.querySelector('nav');
+            window.addEventListener('scroll',()=>{window.scrollY>80?nav.classList.add('shadow-lg'):nav.classList.remove('shadow-lg')},{passive:true});
+        });
+    </script>
+
+<!-- Cookie Banner -->
+    <div id="cookieBanner" class="fixed bottom-0 left-0 right-0 z-[9998] bg-white border-t border-zinc-200 shadow-2xl px-6 py-4 transform translate-y-full transition-transform duration-500">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-sm text-zinc-600"><iconify-icon icon="solar:cookie-linear" width="18" class="text-gold-500 mr-1 align-middle"></iconify-icon> We use cookies to enhance your browsing experience.</p>
+            <div class="flex gap-3">
+                <button onclick="document.getElementById('cookieBanner').style.transform='translateY(100%)';localStorage.setItem('cookies','rejected')" class="px-4 py-2 text-xs font-medium text-zinc-500 border border-zinc-300 rounded-full hover:bg-zinc-50 transition-colors">Reject</button>
+                <button onclick="document.getElementById('cookieBanner').style.transform='translateY(100%)';localStorage.setItem('cookies','accepted')" class="px-4 py-2 text-xs font-medium text-white bg-gold-500 rounded-full hover:bg-gold-600 transition-colors">Accept All</button>
+            </div>
+        </div>
+    </div>
+    <script>if(!localStorage.getItem('cookies')){setTimeout(()=>{document.getElementById('cookieBanner').style.transform='translateY(0)'},1500)}</script>
+</body>
+</html>
