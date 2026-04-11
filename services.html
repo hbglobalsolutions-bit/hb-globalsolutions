@@ -1,24 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services - HB Global Solutions</title>
-    <meta name="description" content="Discover our professional web services: website creation, SEO optimization, digital marketing, business launch, automation & maintenance. HB Global Solutions, Belgium.">
-    <meta name="keywords" content="web services Belgium, website creation, SEO, digital marketing, automation, business launch, HB Global Solutions">
-    <meta name="author" content="HB Global Solutions">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://hb-globalsolutions.com/services.html">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hb-globalsolutions.com/services.html">
-    <meta property="og:title" content="Our Services - HB Global Solutions">
-    <meta property="og:description" content="Website creation, SEO, digital marketing, business launch & automation services for entrepreneurs in Belgium.">
-    <meta property="og:image" content="https://hb-globalsolutions.com/og-image.jpg">
-    <meta property="og:site_name" content="HB Global Solutions">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Our Services - HB Global Solutions">
-    <meta name="twitter:description" content="Professional web services for entrepreneurs in Belgium.">
-    <meta name="twitter:image" content="https://hb-globalsolutions.com/og-image.jpg">
+    <meta name="description" content="Professional web design, SEO, digital marketing, business launch and automation services by HB Global Solutions in Belgium.">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23C5A55A'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-weight='bold' font-size='14' fill='white'>HB</text></svg>">
     <meta name="theme-color" content="#C5A55A">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -28,28 +14,9 @@
                 extend: {
                     colors: {
                         gold: {
-                            50: '#FBF7EC',
-                            100: '#F5ECD3',
-                            200: '#EBDAA8',
-                            300: '#DFC57A',
-                            400: '#D4B155',
-                            500: '#C5A55A',
-                            600: '#A8893A',
-                            700: '#7F6A2E',
-                            800: '#574A20',
-                            900: '#2E2711',
-                        },
-                        dark: {
-                            50: '#3a3a3a',
-                            100: '#2e2e2e',
-                            200: '#262626',
-                            300: '#1f1f1f',
-                            400: '#1a1a1a',
-                            500: '#151515',
-                            600: '#111111',
-                            700: '#0d0d0d',
-                            800: '#0a0a0a',
-                            900: '#050505',
+                            50: '#FBF7EC', 100: '#F5ECD3', 200: '#EBDAA8', 300: '#DFC57A',
+                            400: '#D4B155', 500: '#C5A55A', 600: '#A8893A', 700: '#7F6A2E',
+                            800: '#574A20', 900: '#2E2711',
                         }
                     }
                 }
@@ -59,629 +26,303 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <style>
         .font-serif-display { font-family: 'Playfair Display', Georgia, serif; }
         .font-sans { font-family: 'Inter', sans-serif; }
-        .gold-gradient { background: linear-gradient(135deg, #C5A55A 0%, #E8D5A3 50%, #C5A55A 100%); }
-        .dark-radial { background: radial-gradient(ellipse at top, #1f1f1f 0%, #0a0a0a 70%); }
-        .gold-border-glow { box-shadow: 0 0 15px rgba(197, 165, 90, 0.1); }
-
-        /* Scroll Animations */
-        [data-scroll] {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-        }
-        [data-scroll].is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        [data-scroll][data-scroll-delay="100"] { transition-delay: 0.1s; }
-        [data-scroll][data-scroll-delay="200"] { transition-delay: 0.2s; }
-        [data-scroll][data-scroll-delay="300"] { transition-delay: 0.3s; }
-        [data-scroll][data-scroll-delay="400"] { transition-delay: 0.4s; }
-        [data-scroll][data-scroll-delay="500"] { transition-delay: 0.5s; }
-
-        /* Floating animation */
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(3deg); }
-        }
-        .animate-float { animation: float 6s ease-in-out infinite; }
-        .animate-float-delayed { animation: float 6s ease-in-out 2s infinite; }
-
-        /* Back to top button */
-        #back-to-top {
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.3s ease;
-        }
-        #back-to-top.visible {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        /* Cookie banner slide up */
-        #cookie-banner {
-            transform: translateY(100%);
-            transition: transform 0.5s ease-out;
-        }
-        #cookie-banner.show {
-            transform: translateY(0);
-        }
+        html { scroll-behavior: smooth; }
+        .mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .mobile-menu.open { max-height: 500px; }
+        [data-scroll] { opacity: 0; transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+        [data-scroll].is-visible { opacity: 1; transform: none !important; }
+        [data-scroll="fade-up"] { transform: translateY(40px); }
+        [data-scroll="fade-left"] { transform: translateX(40px); }
+        [data-scroll="fade-right"] { transform: translateX(-40px); }
+        [data-scroll="zoom-in"] { transform: scale(0.9); }
+        [data-scroll-delay="100"] { transition-delay: 0.1s; }
+        [data-scroll-delay="200"] { transition-delay: 0.2s; }
+        [data-scroll-delay="300"] { transition-delay: 0.3s; }
+        [data-scroll-delay="400"] { transition-delay: 0.4s; }
+        [data-scroll-delay="500"] { transition-delay: 0.5s; }
+        [data-scroll-delay="600"] { transition-delay: 0.6s; }
     </style>
 </head>
-<body class="bg-dark-800 text-zinc-200 antialiased selection:bg-gold-500/30 selection:text-white font-sans">
+<body class="bg-[#FAFAF8] text-zinc-800 antialiased selection:bg-gold-100 selection:text-gold-900 font-sans">
 
-    <!-- Navigation -->
-    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-dark-800/90 backdrop-blur-md border-b border-gold-500/20 transition-all duration-300">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="flex items-center justify-between h-16 md:h-20">
-                <!-- Logo -->
-                <a href="index.html" class="flex items-center gap-3">
-                    <div class="w-10 h-10 border-2 border-gold-500 text-gold-500 flex items-center justify-center rounded-sm">
-                        <span class="text-sm font-bold tracking-tighter font-serif-display">HB</span>
-                    </div>
-                    <span class="text-base font-medium text-white tracking-tight hidden sm:block">HB Global Solutions</span>
-                </a>
-
-                <!-- Desktop Nav -->
-                <div class="hidden md:flex items-center gap-8">
-                    <a href="index.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors tracking-wider uppercase">Home</a>
-                    <a href="services.html" class="text-sm font-medium text-gold-500 border-b border-gold-500 pb-0.5 tracking-wider uppercase">Services</a>
-                    <a href="portfolio.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors tracking-wider uppercase">Portfolio</a>
-                    <a href="index.html#pricing" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors tracking-wider uppercase">Pricing</a>
-                    <a href="about.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors tracking-wider uppercase">About</a>
-                    <a href="contact.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors tracking-wider uppercase">Contact</a>
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-zinc-200/80">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-9 h-9 border-2 border-gold-500 text-gold-500 flex items-center justify-center rounded-sm">
+                    <span class="text-xs font-bold tracking-tighter font-serif-display">HB</span>
                 </div>
-
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden text-zinc-400 hover:text-white transition-colors">
-                    <iconify-icon icon="solar:hamburger-menu-linear" width="28" height="28"></iconify-icon>
+                <span class="text-sm font-semibold text-zinc-900 tracking-tight hidden sm:inline">HB Global Solutions</span>
+            </a>
+            <div class="hidden lg:flex items-center gap-7">
+                <a href="index.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Home</a>
+                <a href="services.html" class="text-xs font-medium text-gold-600 uppercase tracking-wider">Services</a>
+                <a href="portfolio.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Portfolio</a>
+                <a href="pricing.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Pricing</a>
+                <a href="process.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Process</a>
+                <a href="about.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">About</a>
+                <a href="contact.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Contact</a>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="relative group">
+                    <div class="flex items-center gap-1.5 text-xs text-zinc-500 border border-zinc-300 rounded-sm px-2.5 py-1 cursor-pointer hover:border-zinc-400 transition-colors">
+                        <span>EN</span>
+                        <iconify-icon icon="solar:alt-arrow-down-linear" width="12" height="12" class="transition-transform group-hover:rotate-180"></iconify-icon>
+                    </div>
+                    <div class="absolute top-full right-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                        <div class="bg-white rounded-lg shadow-xl border border-zinc-100 py-1 w-28">
+                            <span class="block px-4 py-2 text-xs font-semibold text-gold-600 bg-gold-50/50">🇬🇧 English</span>
+                            <a href="fr/index.html" class="block px-4 py-2 text-xs text-zinc-600 hover:bg-gold-50/50 hover:text-gold-600 transition-colors">🇫🇷 Français</a>
+                            <a href="nl/index.html" class="block px-4 py-2 text-xs text-zinc-600 hover:bg-gold-50/50 hover:text-gold-600 transition-colors">🇧🇪 Nederlands</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="contact.html" class="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 bg-gold-500 text-white text-xs font-semibold rounded-full hover:bg-gold-600 transition-all duration-300 uppercase tracking-wider shadow-sm hover:shadow-md">
+                    Get Started
+                </a>
+                <button id="menuBtn" onclick="document.getElementById('mobileMenu').classList.toggle('open')" class="lg:hidden flex items-center justify-center w-9 h-9 text-zinc-700">
+                    <iconify-icon icon="solar:hamburger-menu-linear" width="22" height="22"></iconify-icon>
                 </button>
             </div>
-
-            <!-- Mobile Nav -->
-            <div id="mobile-menu" class="md:hidden hidden pb-6 border-t border-zinc-700/50 mt-2 pt-4">
-                <div class="flex flex-col gap-4">
-                    <a href="index.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors tracking-wider uppercase">Home</a>
-                    <a href="services.html" class="text-sm font-medium text-gold-500 tracking-wider uppercase">Services</a>
-                    <a href="portfolio.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors tracking-wider uppercase">Portfolio</a>
-                    <a href="index.html#pricing" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors tracking-wider uppercase">Pricing</a>
-                    <a href="about.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors tracking-wider uppercase">About</a>
-                    <a href="contact.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors tracking-wider uppercase">Contact</a>
-                </div>
+        </div>
+        <div id="mobileMenu" class="mobile-menu lg:hidden bg-white border-t border-zinc-100">
+            <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
+                <a href="index.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">Home</a>
+                <a href="services.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">Services</a>
+                <a href="portfolio.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">Portfolio</a>
+                <a href="pricing.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">Pricing</a>
+                <a href="process.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">Process</a>
+                <a href="about.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">About</a>
+                <a href="contact.html" class="mt-3 px-4 py-3 bg-gold-500 text-white text-sm font-semibold rounded-full text-center hover:bg-gold-600 transition-colors uppercase tracking-wider">Get Started</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Banner -->
-    <section class="dark-radial border-b border-gold-500/20 pt-32 pb-20 relative overflow-hidden">
-        <!-- Floating decorative elements -->
-        <div class="absolute top-20 right-10 w-64 h-64 bg-gold-500/5 rounded-full blur-3xl animate-float"></div>
-        <div class="absolute bottom-10 left-10 w-48 h-48 bg-gold-500/5 rounded-full blur-3xl animate-float-delayed"></div>
-        <div class="absolute top-1/2 left-1/4 w-2 h-2 bg-gold-500/30 rounded-full animate-float"></div>
-        <div class="absolute top-1/3 right-1/3 w-1.5 h-1.5 bg-gold-500/20 rounded-full animate-float-delayed"></div>
+    <!-- Hero -->
+    <section class="pt-28 pb-16 bg-gradient-to-b from-gold-50/30 to-transparent relative overflow-hidden">
+        <div class="absolute top-20 right-[10%] w-20 h-20 rounded-full border border-gold-200/30 animate-pulse"></div>
+        <div class="absolute bottom-10 left-[5%] w-14 h-14 rounded-full bg-gold-100/20"></div>
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-xs font-semibold text-gold-600 uppercase tracking-[0.2em] mb-4" data-scroll="fade-up">What We Offer</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-zinc-900 mb-4 font-serif-display" data-scroll="fade-up" data-scroll-delay="100">Our <em class="text-gold-500 italic">Services</em></h1>
+            <p class="text-zinc-500 max-w-xl mx-auto" data-scroll="fade-up" data-scroll-delay="200">End-to-end digital solutions to help your business thrive online.</p>
+            <div class="mt-4 text-sm text-zinc-400"><a href="index.html" class="hover:text-gold-500 transition-colors">Home</a> <span class="mx-2">/</span> <span class="text-zinc-700">Services</span></div>
+        </div>
+    </section>
 
-        <div class="max-w-6xl mx-auto px-6 relative z-10">
-            <!-- Breadcrumb -->
-            <nav class="flex items-center gap-2 text-sm mb-8" data-scroll>
-                <a href="index.html" class="text-zinc-400 hover:text-gold-500 transition-colors">Home</a>
-                <iconify-icon icon="solar:alt-arrow-right-linear" width="14" height="14" class="text-zinc-600"></iconify-icon>
-                <span class="text-gold-500">Services</span>
-            </nav>
-
-            <div class="max-w-3xl" data-scroll data-scroll-delay="100">
-                <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-gold-500/10 text-gold-400 border border-gold-500/20 mb-6">
-                    <iconify-icon icon="solar:star-bold" width="12" height="12" class="mr-1.5"></iconify-icon>
-                    Premium Digital Services
+    <!-- Services Grid -->
+    <section class="py-20">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-white rounded-2xl p-8 border border-zinc-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300" data-scroll="fade-up">
+                <div class="w-14 h-14 bg-gold-50 border border-gold-100 rounded-xl flex items-center justify-center text-gold-600 mb-6">
+                    <iconify-icon icon="solar:code-bold-duotone" width="28" height="28"></iconify-icon>
                 </div>
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
-                    Our <span class="font-serif-display italic text-gold-500">Services</span>
-                </h1>
-                <p class="text-lg text-zinc-400 leading-relaxed max-w-2xl">
-                    From website creation to full-scale digital marketing, we provide end-to-end solutions to help your business thrive online. Every service is tailored to your unique goals.
-                </p>
+                <h3 class="text-xl font-bold text-zinc-900 mb-3">Website Creation</h3>
+                <p class="text-sm text-zinc-500 mb-5 leading-relaxed">Custom, responsive websites designed to convert visitors into customers and grow your revenue.</p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Custom responsive design</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Mobile-first approach</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Performance optimized</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> CMS integration</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> SSL & GDPR compliant</li>
+                </ul>
+                <a href="contact.html" class="text-sm font-semibold text-gold-600 hover:text-gold-700 transition-colors flex items-center gap-1">Get Started <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+            </div>
+            <!-- Service 2 -->
+            <div class="bg-white rounded-2xl p-8 border border-zinc-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300" data-scroll="fade-up" data-scroll-delay="200">
+                <div class="w-14 h-14 bg-gold-50 border border-gold-100 rounded-xl flex items-center justify-center text-gold-600 mb-6">
+                    <iconify-icon icon="solar:chart-bold-duotone" width="28" height="28"></iconify-icon>
+                </div>
+                <h3 class="text-xl font-bold text-zinc-900 mb-3">SEO Optimization</h3>
+                <p class="text-sm text-zinc-500 mb-5 leading-relaxed">Rank higher on Google, attract organic traffic and dominate your local market in Belgium.</p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Keyword research</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> On-page optimization</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Google Business Profile</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Link building</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Monthly reports</li>
+                </ul>
+                <a href="contact.html" class="text-sm font-semibold text-gold-600 hover:text-gold-700 transition-colors flex items-center gap-1">Get Started <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+            </div>
+            <!-- Service 3 -->
+            <div class="bg-white rounded-2xl p-8 border border-zinc-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300" data-scroll="fade-up" data-scroll-delay="400">
+                <div class="w-14 h-14 bg-gold-50 border border-gold-100 rounded-xl flex items-center justify-center text-gold-600 mb-6">
+                    <iconify-icon icon="solar:megaphone-bold-duotone" width="28" height="28"></iconify-icon>
+                </div>
+                <h3 class="text-xl font-bold text-zinc-900 mb-3">Digital Marketing</h3>
+                <p class="text-sm text-zinc-500 mb-5 leading-relaxed">Strategic campaigns across social media, Google Ads, and email marketing to grow your audience.</p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Social media management</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Google & Meta Ads</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Email marketing</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Content strategy</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Analytics & reporting</li>
+                </ul>
+                <a href="contact.html" class="text-sm font-semibold text-gold-600 hover:text-gold-700 transition-colors flex items-center gap-1">Get Started <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+            </div>
+            <!-- Service 4 -->
+            <div class="bg-white rounded-2xl p-8 border border-zinc-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300" data-scroll="fade-up">
+                <div class="w-14 h-14 bg-gold-50 border border-gold-100 rounded-xl flex items-center justify-center text-gold-600 mb-6">
+                    <iconify-icon icon="solar:rocket-2-bold-duotone" width="28" height="28"></iconify-icon>
+                </div>
+                <h3 class="text-xl font-bold text-zinc-900 mb-3">Business Launch</h3>
+                <p class="text-sm text-zinc-500 mb-5 leading-relaxed">Complete support for company creation in Belgium — from registration to your first clients.</p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Company registration</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Brand identity</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Business plan</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Digital infrastructure</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Launch campaign</li>
+                </ul>
+                <a href="contact.html" class="text-sm font-semibold text-gold-600 hover:text-gold-700 transition-colors flex items-center gap-1">Get Started <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+            </div>
+            <!-- Service 5 -->
+            <div class="bg-white rounded-2xl p-8 border border-zinc-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300" data-scroll="fade-up" data-scroll-delay="200">
+                <div class="w-14 h-14 bg-gold-50 border border-gold-100 rounded-xl flex items-center justify-center text-gold-600 mb-6">
+                    <iconify-icon icon="solar:settings-bold-duotone" width="28" height="28"></iconify-icon>
+                </div>
+                <h3 class="text-xl font-bold text-zinc-900 mb-3">Automation</h3>
+                <p class="text-sm text-zinc-500 mb-5 leading-relaxed">Streamline your workflows with smart CRM, email sequences, invoicing, and social scheduling.</p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> CRM setup</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Email sequences</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Invoicing automation</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Social scheduling</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Zapier / Make</li>
+                </ul>
+                <a href="contact.html" class="text-sm font-semibold text-gold-600 hover:text-gold-700 transition-colors flex items-center gap-1">Get Started <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
+            </div>
+            <!-- Service 6 -->
+            <div class="bg-white rounded-2xl p-8 border border-zinc-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300" data-scroll="fade-up" data-scroll-delay="400">
+                <div class="w-14 h-14 bg-gold-50 border border-gold-100 rounded-xl flex items-center justify-center text-gold-600 mb-6">
+                    <iconify-icon icon="solar:pallete-2-bold-duotone" width="28" height="28"></iconify-icon>
+                </div>
+                <h3 class="text-xl font-bold text-zinc-900 mb-3">Branding & Identity</h3>
+                <p class="text-sm text-zinc-500 mb-5 leading-relaxed">Build a memorable brand with a professional logo, color palette, typography, and brand guidelines.</p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Logo design</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Color palette</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Typography system</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Brand guidelines</li>
+                    <li class="flex items-center gap-2 text-sm text-zinc-600"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500" width="16"></iconify-icon> Social media kit</li>
+                </ul>
+                <a href="contact.html" class="text-sm font-semibold text-gold-600 hover:text-gold-700 transition-colors flex items-center gap-1">Get Started <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon></a>
             </div>
         </div>
     </section>
 
-    <!-- Main Services Section -->
-    <main class="max-w-6xl mx-auto px-6 py-20">
-
-        <!-- Services Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
-
-            <!-- Service 1 - Website Creation -->
-            <div class="bg-dark-300 border border-zinc-700/50 rounded-xl p-8 hover:border-gold-500/30 transition-all group relative overflow-hidden gold-border-glow" data-scroll>
-                <div class="absolute top-0 right-0 -mt-8 -mr-8 w-32 h-32 bg-gradient-to-br from-gold-500/10 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-0"></div>
-
-                <div class="relative z-10">
-                    <div class="text-xs font-mono text-gold-500/60 mb-4 tracking-wider">SERVICE 01</div>
-                    <div class="w-14 h-14 bg-dark-400 border border-zinc-700/50 rounded-lg flex items-center justify-center mb-6 text-gold-500 group-hover:border-gold-500/30 transition-colors">
-                        <iconify-icon icon="solar:code-square-linear" width="28" height="28"></iconify-icon>
-                    </div>
-
-                    <h3 class="text-xl font-medium tracking-tight text-white mb-3">Website Creation</h3>
-                    <p class="text-sm text-zinc-400 leading-relaxed mb-6">
-                        Premium, responsive websites designed to convert visitors into clients while reflecting your unique brand identity. We build with performance, SEO, and user experience in mind.
-                    </p>
-
-                    <ul class="space-y-2.5 mb-8">
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Custom design tailored to your brand
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Fully responsive on all devices
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Fast loading &amp; optimized performance
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            CMS integration (WordPress, Webflow, etc.)
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            SSL security &amp; GDPR compliance
-                        </li>
-                    </ul>
-
-                    <a href="contact.html" class="inline-flex items-center px-5 py-2.5 bg-gold-500 text-dark-800 text-sm font-semibold rounded-sm shadow-sm hover:bg-gold-400 transition-colors uppercase tracking-wider">
-                        Get Started
-                        <iconify-icon icon="solar:arrow-right-linear" width="16" height="16" class="ml-2"></iconify-icon>
-                    </a>
-                </div>
+    <!-- CTA -->
+    <section class="py-20 bg-zinc-900 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gold-400 via-gold-500 to-gold-400"></div>
+        <div class="max-w-3xl mx-auto px-6 text-center" data-scroll="zoom-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 font-serif-display">Ready to <em class="text-gold-400 italic">Transform</em> Your Business?</h2>
+            <p class="text-zinc-400 mb-8">Book a free consultation and let's discuss how we can help you grow.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="px-8 py-4 bg-gold-500 text-white font-semibold rounded-full hover:bg-gold-600 transition-all shadow-lg">Start Your Project</a>
+                <a href="https://wa.me/32485050654" class="px-8 py-4 border border-zinc-600 text-white font-semibold rounded-full hover:bg-zinc-800 transition-all">WhatsApp Us</a>
             </div>
-
-            <!-- Service 2 - SEO Optimization -->
-            <div class="bg-dark-300 border border-zinc-700/50 rounded-xl p-8 hover:border-gold-500/30 transition-all group relative overflow-hidden gold-border-glow" data-scroll data-scroll-delay="100">
-                <div class="absolute top-0 right-0 -mt-8 -mr-8 w-32 h-32 bg-gradient-to-br from-gold-500/10 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-0"></div>
-
-                <div class="relative z-10">
-                    <div class="text-xs font-mono text-gold-500/60 mb-4 tracking-wider">SERVICE 02</div>
-                    <div class="w-14 h-14 bg-dark-400 border border-zinc-700/50 rounded-lg flex items-center justify-center mb-6 text-gold-500 group-hover:border-gold-500/30 transition-colors">
-                        <iconify-icon icon="solar:chart-linear" width="28" height="28"></iconify-icon>
-                    </div>
-
-                    <h3 class="text-xl font-medium tracking-tight text-white mb-3">SEO Optimization</h3>
-                    <p class="text-sm text-zinc-400 leading-relaxed mb-6">
-                        Dominate Google search results with our advanced SEO strategies. We ensure your business is found by the right audience at the right time, driving organic traffic that converts.
-                    </p>
-
-                    <ul class="space-y-2.5 mb-8">
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Comprehensive keyword research
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            On-page &amp; technical SEO audit
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Google Business Profile optimization
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Link building &amp; content strategy
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Monthly performance reports
-                        </li>
-                    </ul>
-
-                    <a href="contact.html" class="inline-flex items-center px-5 py-2.5 bg-gold-500 text-dark-800 text-sm font-semibold rounded-sm shadow-sm hover:bg-gold-400 transition-colors uppercase tracking-wider">
-                        Get Started
-                        <iconify-icon icon="solar:arrow-right-linear" width="16" height="16" class="ml-2"></iconify-icon>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Service 3 - Digital Marketing -->
-            <div class="bg-dark-300 border border-zinc-700/50 rounded-xl p-8 hover:border-gold-500/30 transition-all group relative overflow-hidden gold-border-glow" data-scroll data-scroll-delay="200">
-                <div class="absolute top-0 right-0 -mt-8 -mr-8 w-32 h-32 bg-gradient-to-br from-gold-500/10 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-0"></div>
-
-                <div class="relative z-10">
-                    <div class="text-xs font-mono text-gold-500/60 mb-4 tracking-wider">SERVICE 03</div>
-                    <div class="w-14 h-14 bg-dark-400 border border-zinc-700/50 rounded-lg flex items-center justify-center mb-6 text-gold-500 group-hover:border-gold-500/30 transition-colors">
-                        <iconify-icon icon="solar:graph-up-linear" width="28" height="28"></iconify-icon>
-                    </div>
-
-                    <h3 class="text-xl font-medium tracking-tight text-white mb-3">Digital Marketing</h3>
-                    <p class="text-sm text-zinc-400 leading-relaxed mb-6">
-                        Comprehensive marketing campaigns tailored to amplify your reach, establish authority in your industry, and drive measurable results across all digital channels.
-                    </p>
-
-                    <ul class="space-y-2.5 mb-8">
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Social media management &amp; strategy
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Google Ads &amp; Meta Ads campaigns
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Email marketing &amp; newsletters
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Content creation &amp; copywriting
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Analytics &amp; conversion tracking
-                        </li>
-                    </ul>
-
-                    <a href="contact.html" class="inline-flex items-center px-5 py-2.5 bg-gold-500 text-dark-800 text-sm font-semibold rounded-sm shadow-sm hover:bg-gold-400 transition-colors uppercase tracking-wider">
-                        Get Started
-                        <iconify-icon icon="solar:arrow-right-linear" width="16" height="16" class="ml-2"></iconify-icon>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Service 4 - Business Launch -->
-            <div class="bg-dark-300 border border-zinc-700/50 rounded-xl p-8 hover:border-gold-500/30 transition-all group relative overflow-hidden gold-border-glow" data-scroll>
-                <div class="absolute top-0 right-0 -mt-8 -mr-8 w-32 h-32 bg-gradient-to-br from-gold-500/10 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-0"></div>
-
-                <div class="relative z-10">
-                    <div class="text-xs font-mono text-gold-500/60 mb-4 tracking-wider">SERVICE 04</div>
-                    <div class="w-14 h-14 bg-dark-400 border border-zinc-700/50 rounded-lg flex items-center justify-center mb-6 text-gold-500 group-hover:border-gold-500/30 transition-colors">
-                        <iconify-icon icon="solar:rocket-2-linear" width="28" height="28"></iconify-icon>
-                    </div>
-
-                    <h3 class="text-xl font-medium tracking-tight text-white mb-3">Business Launch</h3>
-                    <p class="text-sm text-zinc-400 leading-relaxed mb-6">
-                        We guide you through the entire process of launching your business in Belgium. From administrative setup to digital presence, we ensure a smooth and successful start.
-                    </p>
-
-                    <ul class="space-y-2.5 mb-8">
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Company registration guidance
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Brand identity &amp; logo design
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Business plan &amp; strategy consulting
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Digital infrastructure setup
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Launch marketing campaign
-                        </li>
-                    </ul>
-
-                    <a href="contact.html" class="inline-flex items-center px-5 py-2.5 bg-gold-500 text-dark-800 text-sm font-semibold rounded-sm shadow-sm hover:bg-gold-400 transition-colors uppercase tracking-wider">
-                        Get Started
-                        <iconify-icon icon="solar:arrow-right-linear" width="16" height="16" class="ml-2"></iconify-icon>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Service 5 - Automation -->
-            <div class="bg-dark-300 border border-zinc-700/50 rounded-xl p-8 hover:border-gold-500/30 transition-all group relative overflow-hidden gold-border-glow" data-scroll data-scroll-delay="100">
-                <div class="absolute top-0 right-0 -mt-8 -mr-8 w-32 h-32 bg-gradient-to-br from-gold-500/10 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-0"></div>
-
-                <div class="relative z-10">
-                    <div class="text-xs font-mono text-gold-500/60 mb-4 tracking-wider">SERVICE 05</div>
-                    <div class="w-14 h-14 bg-dark-400 border border-zinc-700/50 rounded-lg flex items-center justify-center mb-6 text-gold-500 group-hover:border-gold-500/30 transition-colors">
-                        <iconify-icon icon="solar:settings-linear" width="28" height="28"></iconify-icon>
-                    </div>
-
-                    <h3 class="text-xl font-medium tracking-tight text-white mb-3">Automation</h3>
-                    <p class="text-sm text-zinc-400 leading-relaxed mb-6">
-                        Streamline your operations with intelligent automation systems designed to save you time, reduce errors, and maximize efficiency across your business workflows.
-                    </p>
-
-                    <ul class="space-y-2.5 mb-8">
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            CRM &amp; client management automation
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Automated email sequences &amp; follow-ups
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Invoicing &amp; payment automation
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Social media scheduling tools
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Custom workflow integrations (Zapier, Make)
-                        </li>
-                    </ul>
-
-                    <a href="contact.html" class="inline-flex items-center px-5 py-2.5 bg-gold-500 text-dark-800 text-sm font-semibold rounded-sm shadow-sm hover:bg-gold-400 transition-colors uppercase tracking-wider">
-                        Get Started
-                        <iconify-icon icon="solar:arrow-right-linear" width="16" height="16" class="ml-2"></iconify-icon>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Service 6 - Maintenance & Support -->
-            <div class="bg-dark-300 border border-zinc-700/50 rounded-xl p-8 hover:border-gold-500/30 transition-all group relative overflow-hidden gold-border-glow" data-scroll data-scroll-delay="200">
-                <div class="absolute top-0 right-0 -mt-8 -mr-8 w-32 h-32 bg-gradient-to-br from-gold-500/10 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-0"></div>
-
-                <div class="relative z-10">
-                    <div class="text-xs font-mono text-gold-500/60 mb-4 tracking-wider">SERVICE 06</div>
-                    <div class="w-14 h-14 bg-dark-400 border border-zinc-700/50 rounded-lg flex items-center justify-center mb-6 text-gold-500 group-hover:border-gold-500/30 transition-colors">
-                        <iconify-icon icon="solar:shield-check-linear" width="28" height="28"></iconify-icon>
-                    </div>
-
-                    <h3 class="text-xl font-medium tracking-tight text-white mb-3">Maintenance &amp; Support</h3>
-                    <p class="text-sm text-zinc-400 leading-relaxed mb-6">
-                        Keep your website and digital assets running smoothly with our ongoing maintenance and support plans. We handle updates, security, and performance so you can focus on your business.
-                    </p>
-
-                    <ul class="space-y-2.5 mb-8">
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Regular updates &amp; security patches
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Daily backups &amp; disaster recovery
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Performance monitoring &amp; optimization
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Content updates &amp; modifications
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-zinc-300">
-                            <iconify-icon icon="solar:check-circle-bold" width="18" height="18" class="text-gold-500 mt-0.5 flex-shrink-0"></iconify-icon>
-                            Priority email &amp; phone support
-                        </li>
-                    </ul>
-
-                    <a href="contact.html" class="inline-flex items-center px-5 py-2.5 bg-gold-500 text-dark-800 text-sm font-semibold rounded-sm shadow-sm hover:bg-gold-400 transition-colors uppercase tracking-wider">
-                        Get Started
-                        <iconify-icon icon="solar:arrow-right-linear" width="16" height="16" class="ml-2"></iconify-icon>
-                    </a>
-                </div>
-            </div>
-
         </div>
+    </section>
 
-        <!-- CTA Banner -->
-        <section class="relative overflow-hidden rounded-2xl" data-scroll>
-            <div class="absolute inset-0 gold-gradient opacity-10"></div>
-            <div class="absolute inset-0 dark-radial opacity-90"></div>
-            <div class="absolute top-0 right-0 w-72 h-72 bg-gold-500/10 rounded-full blur-3xl -mr-20 -mt-20"></div>
-            <div class="absolute bottom-0 left-0 w-56 h-56 bg-gold-500/10 rounded-full blur-3xl -ml-16 -mb-16"></div>
-
-            <div class="relative z-10 border border-gold-500/20 rounded-2xl px-8 py-16 md:px-16 md:py-20 text-center">
-                <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-gold-500/10 text-gold-400 border border-gold-500/20 mb-6">
-                    <iconify-icon icon="solar:chat-round-call-bold" width="12" height="12" class="mr-1.5"></iconify-icon>
-                    Free Consultation
-                </div>
-
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">
-                    Ready to <span class="font-serif-display italic text-gold-500">Transform</span> Your Business?
-                </h2>
-                <p class="text-zinc-400 leading-relaxed max-w-2xl mx-auto mb-8">
-                    Let's discuss your project and find the perfect solution for your needs. Book a free consultation and discover how we can help you grow your online presence.
-                </p>
-
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="contact.html" class="px-8 py-3.5 bg-gold-500 text-dark-800 text-sm font-semibold rounded-sm shadow-sm hover:bg-gold-400 transition-colors uppercase tracking-wider">
-                        Start Your Project
-                    </a>
-                    <a href="https://wa.me/32485050654" target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 bg-transparent text-gold-500 text-sm font-semibold rounded-sm border border-gold-500 shadow-sm hover:bg-gold-500/10 transition-colors uppercase tracking-wider inline-flex items-center gap-2">
-                        <iconify-icon icon="mdi:whatsapp" width="18" height="18"></iconify-icon>
-                        WhatsApp Us
-                    </a>
-                </div>
-
-                <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-zinc-400">
-                    <a href="tel:+32485050654" class="flex items-center gap-2 hover:text-gold-500 transition-colors">
-                        <iconify-icon icon="solar:phone-linear" width="16" height="16" class="text-gold-500"></iconify-icon>
-                        +32 485 050 654
-                    </a>
-                    <a href="mailto:hb.globalsolutions@icloud.com" class="flex items-center gap-2 hover:text-gold-500 transition-colors">
-                        <iconify-icon icon="solar:letter-linear" width="16" height="16" class="text-gold-500"></iconify-icon>
-                        hb.globalsolutions@icloud.com
-                    </a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="border-t border-zinc-700/50 bg-dark-300 mt-12">
-        <div class="max-w-6xl mx-auto px-6 py-16">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
-                <!-- Brand -->
-                <div class="md:col-span-1">
+    <footer class="bg-zinc-900 text-white pt-16 pb-8">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                <div>
                     <div class="flex items-center gap-3 mb-4">
-                        <div class="w-10 h-10 border-2 border-gold-500 text-gold-500 flex items-center justify-center rounded-sm">
-                            <span class="text-sm font-bold tracking-tighter font-serif-display">HB</span>
+                        <div class="w-9 h-9 border-2 border-gold-500 text-gold-500 flex items-center justify-center rounded-sm">
+                            <span class="text-xs font-bold tracking-tighter font-serif-display">HB</span>
                         </div>
-                        <span class="text-base font-medium text-white tracking-tight">HB Global Solutions</span>
+                        <span class="text-sm font-semibold text-white">HB Global Solutions</span>
                     </div>
-                    <p class="text-sm text-zinc-400 leading-relaxed">
-                        Helping entrepreneurs build, launch, and grow their business online with premium digital solutions.
-                    </p>
+                    <p class="text-sm text-zinc-400 leading-relaxed">We help entrepreneurs build, launch and grow their business online.</p>
                 </div>
-
-                <!-- Pages -->
                 <div>
-                    <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Pages</h4>
-                    <ul class="space-y-2.5">
-                        <li><a href="index.html" class="text-sm text-zinc-400 hover:text-gold-500 transition-colors">Home</a></li>
-                        <li><a href="services.html" class="text-sm text-gold-500">Services</a></li>
-                        <li><a href="portfolio.html" class="text-sm text-zinc-400 hover:text-gold-500 transition-colors">Portfolio</a></li>
-                        <li><a href="about.html" class="text-sm text-zinc-400 hover:text-gold-500 transition-colors">About</a></li>
-                        <li><a href="contact.html" class="text-sm text-zinc-400 hover:text-gold-500 transition-colors">Contact</a></li>
-                    </ul>
+                    <h4 class="text-sm font-semibold mb-4 text-gold-400">Pages</h4>
+                    <div class="flex flex-col gap-2">
+                        <a href="index.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Home</a>
+                        <a href="services.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Services</a>
+                        <a href="portfolio.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Portfolio</a>
+                        <a href="pricing.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Pricing</a>
+                        <a href="process.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Process</a>
+                    </div>
                 </div>
-
-                <!-- Services -->
                 <div>
-                    <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Services</h4>
-                    <ul class="space-y-2.5">
-                        <li><a href="services.html" class="text-sm text-zinc-400 hover:text-gold-500 transition-colors">Website Creation</a></li>
-                        <li><a href="services.html" class="text-sm text-zinc-400 hover:text-gold-500 transition-colors">SEO Optimization</a></li>
-                        <li><a href="services.html" class="text-sm text-zinc-400 hover:text-gold-500 transition-colors">Digital Marketing</a></li>
-                        <li><a href="services.html" class="text-sm text-zinc-400 hover:text-gold-500 transition-colors">Business Launch</a></li>
-                        <li><a href="services.html" class="text-sm text-zinc-400 hover:text-gold-500 transition-colors">Automation</a></li>
-                    </ul>
+                    <h4 class="text-sm font-semibold mb-4 text-gold-400">Services</h4>
+                    <div class="flex flex-col gap-2">
+                        <a href="services.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Website Creation</a>
+                        <a href="services.html" class="text-sm text-zinc-400 hover:text-white transition-colors">SEO Optimization</a>
+                        <a href="services.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Digital Marketing</a>
+                        <a href="services.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Business Launch</a>
+                    </div>
                 </div>
-
-                <!-- Contact -->
                 <div>
-                    <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Contact</h4>
-                    <ul class="space-y-2.5">
-                        <li>
-                            <a href="tel:+32485050654" class="text-sm text-zinc-400 hover:text-gold-500 transition-colors flex items-center gap-2">
-                                <iconify-icon icon="solar:phone-linear" width="14" height="14" class="text-gold-500"></iconify-icon>
-                                +32 485 050 654
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:hb.globalsolutions@icloud.com" class="text-sm text-zinc-400 hover:text-gold-500 transition-colors flex items-center gap-2">
-                                <iconify-icon icon="solar:letter-linear" width="14" height="14" class="text-gold-500"></iconify-icon>
-                                hb.globalsolutions@icloud.com
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://wa.me/32485050654" target="_blank" rel="noopener noreferrer" class="text-sm text-zinc-400 hover:text-gold-500 transition-colors flex items-center gap-2">
-                                <iconify-icon icon="mdi:whatsapp" width="14" height="14" class="text-gold-500"></iconify-icon>
-                                WhatsApp
-                            </a>
-                        </li>
-                    </ul>
+                    <h4 class="text-sm font-semibold mb-4 text-gold-400">Contact</h4>
+                    <div class="flex flex-col gap-2">
+                        <a href="tel:+32485050654" class="text-sm text-zinc-400 hover:text-white transition-colors">+32 485 050 654</a>
+                        <a href="mailto:hb.globalsolutions@icloud.com" class="text-sm text-zinc-400 hover:text-white transition-colors">hb.globalsolutions@icloud.com</a>
+                        <a href="https://wa.me/32485050654" class="text-sm text-zinc-400 hover:text-white transition-colors">WhatsApp</a>
+                    </div>
                 </div>
             </div>
-
-            <!-- Bottom bar -->
-            <div class="border-t border-zinc-700/50 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <p class="text-xs text-zinc-500">&copy; 2026 HB Global Solutions. All rights reserved.</p>
-                <div class="flex items-center gap-6">
-                    <a href="#" class="text-xs text-zinc-500 hover:text-gold-500 transition-colors">Privacy Policy</a>
-                    <a href="#" class="text-xs text-zinc-500 hover:text-gold-500 transition-colors">Terms of Service</a>
+            <div class="border-t border-zinc-800 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
+                <p class="text-xs text-zinc-500">&copy; 2024 HB Global Solutions. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="text-xs text-zinc-500 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-xs text-zinc-500 hover:text-white transition-colors">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/32485050654" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 left-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-110" aria-label="Contact us on WhatsApp">
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/32485050654" target="_blank" rel="noopener" class="fixed bottom-8 left-8 w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-all duration-300 z-50">
         <iconify-icon icon="mdi:whatsapp" width="28" height="28"></iconify-icon>
     </a>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-6 right-6 z-50 w-12 h-12 bg-dark-300 border border-gold-500/30 text-gold-500 rounded-full flex items-center justify-center shadow-lg hover:bg-gold-500 hover:text-dark-800 transition-all" aria-label="Back to top">
-        <iconify-icon icon="solar:arrow-up-linear" width="20" height="20"></iconify-icon>
+    <!-- Back to top -->
+    <button onclick="window.scrollTo({top:0,behavior:'smooth'})" id="backToTop" class="fixed bottom-8 right-8 w-10 h-10 bg-gold-500 text-white rounded-full shadow-lg flex items-center justify-center hover:bg-gold-600 transition-all z-50 opacity-0 pointer-events-none">
+        <iconify-icon icon="solar:arrow-up-linear" width="18" height="18"></iconify-icon>
     </button>
 
-    <!-- Cookie Banner -->
-    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-50 bg-dark-300 border-t border-gold-500/20 px-6 py-4">
-        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p class="text-sm text-zinc-400 text-center sm:text-left">
-                We use cookies to enhance your browsing experience. By continuing to use this site, you agree to our use of cookies.
-            </p>
-            <div class="flex items-center gap-3">
-                <button id="cookie-accept" class="px-5 py-2 bg-gold-500 text-dark-800 text-sm font-semibold rounded-sm hover:bg-gold-400 transition-colors">
-                    Accept
-                </button>
-                <button id="cookie-decline" class="px-5 py-2 bg-transparent text-zinc-400 text-sm font-medium rounded-sm border border-zinc-700 hover:text-white hover:border-zinc-500 transition-colors">
-                    Decline
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Scripts -->
     <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+        // Scroll animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const scrollElements = document.querySelectorAll('[data-scroll]');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+            scrollElements.forEach(el => observer.observe(el));
 
-        // Scroll Observer for animations
-        const scrollElements = document.querySelectorAll('[data-scroll]');
-        const scrollObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    scrollObserver.unobserve(entry.target);
+            // Back to top
+            const btn = document.getElementById('backToTop');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 400) {
+                    btn.style.opacity = '1';
+                    btn.style.pointerEvents = 'auto';
+                } else {
+                    btn.style.opacity = '0';
+                    btn.style.pointerEvents = 'none';
                 }
-            });
-        }, {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        });
+            }, { passive: true });
 
-        scrollElements.forEach(el => scrollObserver.observe(el));
-
-        // Back to Top button
-        const backToTop = document.getElementById('back-to-top');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 400) {
-                backToTop.classList.add('visible');
-            } else {
-                backToTop.classList.remove('visible');
-            }
-        });
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        // Cookie Banner
-        const cookieBanner = document.getElementById('cookie-banner');
-        const cookieAccept = document.getElementById('cookie-accept');
-        const cookieDecline = document.getElementById('cookie-decline');
-
-        if (!localStorage.getItem('cookies-accepted')) {
-            setTimeout(() => {
-                cookieBanner.classList.add('show');
-            }, 1500);
-        }
-
-        cookieAccept.addEventListener('click', () => {
-            localStorage.setItem('cookies-accepted', 'true');
-            cookieBanner.classList.remove('show');
-        });
-
-        cookieDecline.addEventListener('click', () => {
-            localStorage.setItem('cookies-accepted', 'false');
-            cookieBanner.classList.remove('show');
-        });
-
-        // Navbar scroll effect
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('shadow-lg', 'shadow-dark-900/50');
-            } else {
-                navbar.classList.remove('shadow-lg', 'shadow-dark-900/50');
-            }
+            // Navbar shadow
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 80) {
+                    nav.classList.add('shadow-lg');
+                } else {
+                    nav.classList.remove('shadow-lg');
+                }
+            }, { passive: true });
         });
     </script>
 

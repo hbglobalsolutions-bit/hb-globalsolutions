@@ -4,21 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - HB Global Solutions</title>
-    <meta name="description" content="Learn about HB Global Solutions — a Belgium-based digital agency helping entrepreneurs build, launch and grow their business online. Meet our team and values.">
-    <meta name="keywords" content="about HB Global Solutions, digital agency Belgium, web design team, company values">
-    <meta name="author" content="HB Global Solutions">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://hb-globalsolutions.com/about.html">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hb-globalsolutions.com/about.html">
-    <meta property="og:title" content="About Us - HB Global Solutions">
-    <meta property="og:description" content="Belgium-based digital agency helping entrepreneurs build, launch and grow their business online.">
-    <meta property="og:image" content="https://hb-globalsolutions.com/og-image.jpg">
-    <meta property="og:site_name" content="HB Global Solutions">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="About Us - HB Global Solutions">
-    <meta name="twitter:description" content="Meet the team behind HB Global Solutions, Belgium's digital agency.">
-    <meta name="twitter:image" content="https://hb-globalsolutions.com/og-image.jpg">
+    <meta name="description" content="Learn about HB Global Solutions - your trusted digital partner in Belgium for web design, SEO and marketing.">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23C5A55A'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-weight='bold' font-size='14' fill='white'>HB</text></svg>">
     <meta name="theme-color" content="#C5A55A">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -28,16 +14,9 @@
                 extend: {
                     colors: {
                         gold: {
-                            50: '#FBF7EC',
-                            100: '#F5ECD3',
-                            200: '#EBDAA8',
-                            300: '#DFC57A',
-                            400: '#D4B155',
-                            500: '#C5A55A',
-                            600: '#A8893A',
-                            700: '#7F6A2E',
-                            800: '#574A20',
-                            900: '#2E2711',
+                            50: '#FBF7EC', 100: '#F5ECD3', 200: '#EBDAA8', 300: '#DFC57A',
+                            400: '#D4B155', 500: '#C5A55A', 600: '#A8893A', 700: '#7F6A2E',
+                            800: '#574A20', 900: '#2E2711',
                         }
                     }
                 }
@@ -52,98 +31,24 @@
         .font-serif-display { font-family: 'Playfair Display', Georgia, serif; }
         .font-sans { font-family: 'Inter', sans-serif; }
         html { scroll-behavior: smooth; }
-
-        /* Floating animations */
-        @keyframes float-slow {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(3deg); }
-        }
-        @keyframes float-medium {
-            0%, 100% { transform: translateY(0px) translateX(0px); }
-            33% { transform: translateY(-15px) translateX(10px); }
-            66% { transform: translateY(-8px) translateX(-8px); }
-        }
-        @keyframes float-reverse {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(15px) rotate(-3deg); }
-        }
-        @keyframes pulse-glow {
-            0%, 100% { opacity: 0.3; transform: scale(1); }
-            50% { opacity: 0.6; transform: scale(1.05); }
-        }
-        @keyframes spin-slow {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-        @keyframes shimmer {
-            0% { background-position: -200% center; }
-            100% { background-position: 200% center; }
-        }
-        @keyframes fade-in-up {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-float-slow { animation: float-slow 6s ease-in-out infinite; }
-        .animate-float-medium { animation: float-medium 5s ease-in-out infinite; }
-        .animate-float-reverse { animation: float-reverse 7s ease-in-out infinite; }
-        .animate-pulse-glow { animation: pulse-glow 4s ease-in-out infinite; }
-        .animate-spin-slow { animation: spin-slow 20s linear infinite; }
-        .animate-shimmer {
-            background: linear-gradient(90deg, transparent 0%, rgba(197,165,90,0.08) 50%, transparent 100%);
-            background-size: 200% 100%;
-            animation: shimmer 3s ease-in-out infinite;
-        }
-        .animate-fade-in { animation: fade-in-up 0.8s ease-out both; }
-        .animate-fade-in-d1 { animation: fade-in-up 0.8s ease-out 0.1s both; }
-        .animate-fade-in-d2 { animation: fade-in-up 0.8s ease-out 0.2s both; }
-        .animate-fade-in-d3 { animation: fade-in-up 0.8s ease-out 0.3s both; }
-        .animate-fade-in-d4 { animation: fade-in-up 0.8s ease-out 0.4s both; }
-        .animate-fade-in-d5 { animation: fade-in-up 0.8s ease-out 0.5s both; }
-
-        /* Mobile menu */
         .mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
-        .mobile-menu.open { max-height: 400px; }
-
-        /* ===== Scroll-triggered animations ===== */
-        [data-scroll] {
-            opacity: 0;
-            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        [data-scroll].is-visible {
-            opacity: 1;
-            transform: none !important;
-        }
-        /* Animation variants */
+        .mobile-menu.open { max-height: 500px; }
+        [data-scroll] { opacity: 0; transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+        [data-scroll].is-visible { opacity: 1; transform: none !important; }
         [data-scroll="fade-up"] { transform: translateY(40px); }
-        [data-scroll="fade-down"] { transform: translateY(-40px); }
         [data-scroll="fade-left"] { transform: translateX(40px); }
         [data-scroll="fade-right"] { transform: translateX(-40px); }
         [data-scroll="zoom-in"] { transform: scale(0.9); }
-        [data-scroll="fade"] { transform: none; }
-        /* Stagger delays */
         [data-scroll-delay="100"] { transition-delay: 0.1s; }
         [data-scroll-delay="200"] { transition-delay: 0.2s; }
         [data-scroll-delay="300"] { transition-delay: 0.3s; }
         [data-scroll-delay="400"] { transition-delay: 0.4s; }
         [data-scroll-delay="500"] { transition-delay: 0.5s; }
         [data-scroll-delay="600"] { transition-delay: 0.6s; }
-        [data-scroll-delay="700"] { transition-delay: 0.7s; }
-        /* Slower/faster durations */
-        [data-scroll-duration="fast"] { transition-duration: 0.5s; }
-        [data-scroll-duration="slow"] { transition-duration: 1.2s; }
-
-        /* Counter animation */
-        .count-up { display: inline-block; }
     </style>
 </head>
 <body class="bg-[#FAFAF8] text-zinc-800 antialiased selection:bg-gold-100 selection:text-gold-900 font-sans">
 
-    <!-- Scroll Progress Bar -->
-    <div id="scrollProgress" class="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-gold-400 to-gold-600 z-[9999] transition-none" style="width: 0%;"></div>
-
-    <!-- ============================================ -->
-    <!-- NAVIGATION -->
-    <!-- ============================================ -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-zinc-200/80">
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-3">
@@ -156,540 +61,232 @@
                 <a href="index.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Home</a>
                 <a href="services.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Services</a>
                 <a href="portfolio.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Portfolio</a>
-                <a href="index.html#pricing" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Pricing</a>
+                <a href="pricing.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Pricing</a>
+                <a href="process.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Process</a>
                 <a href="about.html" class="text-xs font-medium text-gold-600 uppercase tracking-wider">About</a>
-                <a href="contact.html" class="px-5 py-2 text-xs font-semibold text-white bg-gold-500 rounded-lg hover:bg-gold-600 transition-colors uppercase tracking-wider">Contact</a>
+                <a href="contact.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Contact</a>
             </div>
-            <!-- Mobile hamburger -->
-            <button id="menuToggle" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
-                <span class="w-5 h-0.5 bg-zinc-800 transition-all duration-300" id="menuLine1"></span>
-                <span class="w-5 h-0.5 bg-zinc-800 transition-all duration-300" id="menuLine2"></span>
-                <span class="w-5 h-0.5 bg-zinc-800 transition-all duration-300" id="menuLine3"></span>
-            </button>
+            <div class="flex items-center gap-3">
+                <div class="relative group">
+                    <div class="flex items-center gap-1.5 text-xs text-zinc-500 border border-zinc-300 rounded-sm px-2.5 py-1 cursor-pointer hover:border-zinc-400 transition-colors">
+                        <span>EN</span>
+                        <iconify-icon icon="solar:alt-arrow-down-linear" width="12" height="12" class="transition-transform group-hover:rotate-180"></iconify-icon>
+                    </div>
+                    <div class="absolute top-full right-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                        <div class="bg-white rounded-lg shadow-xl border border-zinc-100 py-1 w-28">
+                            <span class="block px-4 py-2 text-xs font-semibold text-gold-600 bg-gold-50/50">🇬🇧 English</span>
+                            <a href="fr/index.html" class="block px-4 py-2 text-xs text-zinc-600 hover:bg-gold-50/50 hover:text-gold-600 transition-colors">🇫🇷 Français</a>
+                            <a href="nl/index.html" class="block px-4 py-2 text-xs text-zinc-600 hover:bg-gold-50/50 hover:text-gold-600 transition-colors">🇧🇪 Nederlands</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="contact.html" class="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 bg-gold-500 text-white text-xs font-semibold rounded-full hover:bg-gold-600 transition-all duration-300 uppercase tracking-wider shadow-sm hover:shadow-md">
+                    Get Started
+                </a>
+                <button id="menuBtn" onclick="document.getElementById('mobileMenu').classList.toggle('open')" class="lg:hidden flex items-center justify-center w-9 h-9 text-zinc-700">
+                    <iconify-icon icon="solar:hamburger-menu-linear" width="22" height="22"></iconify-icon>
+                </button>
+            </div>
         </div>
-        <!-- Mobile menu -->
         <div id="mobileMenu" class="mobile-menu lg:hidden bg-white border-t border-zinc-100">
-            <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-3">
-                <a href="index.html" class="text-sm font-medium text-zinc-600 hover:text-gold-600 transition-colors py-2">Home</a>
-                <a href="services.html" class="text-sm font-medium text-zinc-600 hover:text-gold-600 transition-colors py-2">Services</a>
-                <a href="portfolio.html" class="text-sm font-medium text-zinc-600 hover:text-gold-600 transition-colors py-2">Portfolio</a>
-                <a href="index.html#pricing" class="text-sm font-medium text-zinc-600 hover:text-gold-600 transition-colors py-2">Pricing</a>
-                <a href="about.html" class="text-sm font-medium text-gold-600 py-2">About</a>
-                <a href="contact.html" class="text-sm font-semibold text-white bg-gold-500 rounded-lg px-4 py-2.5 text-center hover:bg-gold-600 transition-colors">Contact</a>
+            <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
+                <a href="index.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">Home</a>
+                <a href="services.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">Services</a>
+                <a href="portfolio.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">Portfolio</a>
+                <a href="pricing.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">Pricing</a>
+                <a href="process.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">Process</a>
+                <a href="about.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">About</a>
+                <a href="contact.html" class="mt-3 px-4 py-3 bg-gold-500 text-white text-sm font-semibold rounded-full text-center hover:bg-gold-600 transition-colors uppercase tracking-wider">Get Started</a>
             </div>
         </div>
     </nav>
 
-    <!-- ============================================ -->
-    <!-- HERO BANNER -->
-    <!-- ============================================ -->
-    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-gradient-to-br from-gold-50 via-white to-gold-50/30">
-        <!-- Decorative floating elements -->
-        <div class="absolute top-20 left-10 w-64 h-64 bg-gold-200/20 rounded-full blur-3xl animate-float-slow"></div>
-        <div class="absolute bottom-10 right-10 w-48 h-48 bg-gold-300/15 rounded-full blur-2xl animate-float-medium"></div>
-        <div class="absolute top-1/2 left-1/3 w-3 h-3 bg-gold-400/40 rounded-full animate-float-reverse"></div>
-        <div class="absolute top-1/3 right-1/4 w-2 h-2 bg-gold-500/30 rounded-full animate-pulse-glow"></div>
-        <div class="absolute bottom-1/3 left-1/4 w-20 h-20 border border-gold-200/30 rounded-full animate-spin-slow"></div>
-        <div class="absolute top-24 right-1/3 w-1.5 h-1.5 bg-gold-400/50 rounded-full animate-float-slow"></div>
+    <section class="pt-28 pb-16 bg-gradient-to-b from-gold-50/30 to-transparent">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-xs font-semibold text-gold-600 uppercase tracking-[0.2em] mb-4" data-scroll="fade-up">Who We Are</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-zinc-900 mb-4 font-serif-display" data-scroll="fade-up" data-scroll-delay="100">About <em class="text-gold-500 italic">Us</em></h1>
+            <p class="text-zinc-500 max-w-xl mx-auto" data-scroll="fade-up" data-scroll-delay="200">Your trusted partner for digital growth in Belgium.</p>
+            <div class="mt-4 text-sm text-zinc-400"><a href="index.html" class="hover:text-gold-500">Home</a> <span class="mx-2">/</span> <span class="text-zinc-700">About</span></div>
+        </div>
+    </section>
 
-        <div class="max-w-6xl mx-auto px-6 text-center relative z-10">
-            <div class="animate-fade-in">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif-display font-bold text-zinc-900 mb-6">
-                    About <span class="text-gold-500">Us</span>
-                </h1>
+    <section class="py-20">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div data-scroll="fade-right">
+                <p class="text-xs font-semibold text-gold-600 uppercase tracking-[0.2em] mb-4">Our Story</p>
+                <h2 class="text-3xl font-bold text-zinc-900 mb-6 font-serif-display">We combine <em class="text-gold-500 italic">creativity</em> with technical expertise</h2>
+                <p class="text-zinc-500 leading-relaxed mb-4">HB Global Solutions was founded with a simple mission: help entrepreneurs in Belgium build a powerful online presence without the complexity and high costs of traditional agencies.</p>
+                <p class="text-zinc-500 leading-relaxed mb-6">We believe every business deserves a professional website, effective SEO, and a solid digital marketing strategy. From startups to established companies, we provide end-to-end solutions tailored to your specific needs.</p>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="text-center p-4 bg-white rounded-xl border border-zinc-100">
+                        <p class="text-3xl font-bold text-gold-500 font-serif-display">50+</p>
+                        <p class="text-xs text-zinc-500 mt-1">Projects Completed</p>
+                    </div>
+                    <div class="text-center p-4 bg-white rounded-xl border border-zinc-100">
+                        <p class="text-3xl font-bold text-gold-500 font-serif-display">4.9</p>
+                        <p class="text-xs text-zinc-500 mt-1">Average Rating</p>
+                    </div>
+                    <div class="text-center p-4 bg-white rounded-xl border border-zinc-100">
+                        <p class="text-3xl font-bold text-gold-500 font-serif-display">98%</p>
+                        <p class="text-xs text-zinc-500 mt-1">Client Satisfaction</p>
+                    </div>
+                    <div class="text-center p-4 bg-white rounded-xl border border-zinc-100">
+                        <p class="text-3xl font-bold text-gold-500 font-serif-display">24/7</p>
+                        <p class="text-xs text-zinc-500 mt-1">Support Available</p>
+                    </div>
+                </div>
             </div>
-            <div class="animate-fade-in-d1">
-                <nav class="flex items-center justify-center gap-2 text-sm text-zinc-500">
-                    <a href="index.html" class="hover:text-gold-600 transition-colors">Home</a>
-                    <iconify-icon icon="solar:arrow-right-linear" width="14" height="14" class="text-gold-400"></iconify-icon>
-                    <span class="text-gold-600 font-medium">About</span>
-                </nav>
+            <div class="relative" data-scroll="fade-left" data-scroll-delay="200">
+                <div class="bg-gradient-to-br from-gold-100/50 to-gold-50/30 rounded-3xl p-8 border border-gold-200/30">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600&auto=format&fit=crop" alt="Our Team" class="rounded-2xl shadow-lg w-full object-cover h-80">
+                </div>
+                <div class="absolute -bottom-6 -left-6 w-24 h-24 rounded-full border-2 border-gold-300/30 animate-pulse"></div>
             </div>
         </div>
     </section>
 
-    <!-- ============================================ -->
-    <!-- WHO WE ARE -->
-    <!-- ============================================ -->
-    <section class="py-20 md:py-28">
+    <!-- Values -->
+    <section class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                <!-- Text Content -->
-                <div data-scroll="fade-right">
-                    <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-gold-50 border border-gold-100 rounded-full mb-6">
-                        <span class="w-1.5 h-1.5 bg-gold-500 rounded-full"></span>
-                        <span class="text-xs font-semibold text-gold-700 uppercase tracking-wider">Who We Are</span>
+            <h2 class="text-3xl font-bold text-center mb-12 font-serif-display" data-scroll="fade-up">Our <em class="text-gold-500 italic">Values</em></h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center p-6" data-scroll="fade-up">
+                    <div class="w-14 h-14 bg-gold-50 border border-gold-100 rounded-xl flex items-center justify-center text-gold-600 mx-auto mb-4">
+                        <iconify-icon icon="solar:star-bold-duotone" width="28"></iconify-icon>
                     </div>
-                    <h2 class="text-3xl md:text-4xl font-serif-display font-bold text-zinc-900 mb-6">
-                        Building Digital Success <span class="text-gold-500">Together</span>
-                    </h2>
-                    <p class="text-zinc-600 leading-relaxed mb-5">
-                        HB Global Solutions is a Belgium-based digital agency dedicated to helping entrepreneurs and businesses build, launch, and grow their online presence. Founded with a passion for technology and a deep understanding of the entrepreneurial journey, we combine creativity with technical expertise to deliver solutions that truly make a difference.
-                    </p>
-                    <p class="text-zinc-600 leading-relaxed mb-5">
-                        <strong class="text-zinc-800">Our Mission:</strong> To empower entrepreneurs by providing affordable, high-quality digital solutions that enable them to compete in today's digital landscape. We believe every business deserves a powerful online presence, regardless of size or budget.
-                    </p>
-                    <p class="text-zinc-600 leading-relaxed">
-                        <strong class="text-zinc-800">Our Vision:</strong> To become the go-to digital partner for ambitious entrepreneurs across Belgium and beyond, known for our commitment to quality, innovation, and results-driven strategies that fuel sustainable growth.
-                    </p>
+                    <h3 class="font-bold text-zinc-900 mb-2">Quality</h3>
+                    <p class="text-sm text-zinc-500">Every pixel, every line of code crafted with precision.</p>
                 </div>
-                <!-- Image -->
-                <div data-scroll="fade-left" data-scroll-delay="200">
-                    <div class="relative">
-                        <div class="absolute -inset-4 bg-gradient-to-br from-gold-100 to-gold-50 rounded-2xl -z-10"></div>
-                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=450&fit=crop" alt="Our team collaborating" class="rounded-2xl shadow-lg w-full object-cover aspect-[4/3]">
-                        <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-gold-500/10 rounded-full blur-xl animate-pulse-glow"></div>
+                <div class="text-center p-6" data-scroll="fade-up" data-scroll-delay="100">
+                    <div class="w-14 h-14 bg-gold-50 border border-gold-100 rounded-xl flex items-center justify-center text-gold-600 mx-auto mb-4">
+                        <iconify-icon icon="solar:lightbulb-bolt-bold-duotone" width="28"></iconify-icon>
                     </div>
+                    <h3 class="font-bold text-zinc-900 mb-2">Innovation</h3>
+                    <p class="text-sm text-zinc-500">We stay ahead with the latest technologies and trends.</p>
+                </div>
+                <div class="text-center p-6" data-scroll="fade-up" data-scroll-delay="200">
+                    <div class="w-14 h-14 bg-gold-50 border border-gold-100 rounded-xl flex items-center justify-center text-gold-600 mx-auto mb-4">
+                        <iconify-icon icon="solar:shield-check-bold-duotone" width="28"></iconify-icon>
+                    </div>
+                    <h3 class="font-bold text-zinc-900 mb-2">Trust</h3>
+                    <p class="text-sm text-zinc-500">Transparent pricing, honest communication, real results.</p>
+                </div>
+                <div class="text-center p-6" data-scroll="fade-up" data-scroll-delay="300">
+                    <div class="w-14 h-14 bg-gold-50 border border-gold-100 rounded-xl flex items-center justify-center text-gold-600 mx-auto mb-4">
+                        <iconify-icon icon="solar:chart-bold-duotone" width="28"></iconify-icon>
+                    </div>
+                    <h3 class="font-bold text-zinc-900 mb-2">Results</h3>
+                    <p class="text-sm text-zinc-500">We measure success by your growth and satisfaction.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============================================ -->
-    <!-- OUR VALUES -->
-    <!-- ============================================ -->
-    <section class="py-20 md:py-28 bg-white">
+    <!-- CTA -->
+    <section class="py-20 bg-zinc-900">
+        <div class="max-w-3xl mx-auto px-6 text-center" data-scroll="zoom-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 font-serif-display">Let's Build Something <em class="text-gold-400 italic">Amazing</em></h2>
+            <p class="text-zinc-400 mb-8">Ready to work with a team that cares about your success?</p>
+            <a href="contact.html" class="inline-flex px-8 py-4 bg-gold-500 text-white font-semibold rounded-full hover:bg-gold-600 transition-all shadow-lg">Start Your Project</a>
+        </div>
+    </section>
+
+    <footer class="bg-zinc-900 text-white pt-16 pb-8">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center mb-16" data-scroll="fade-up">
-                <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-gold-50 border border-gold-100 rounded-full mb-6">
-                    <span class="w-1.5 h-1.5 bg-gold-500 rounded-full"></span>
-                    <span class="text-xs font-semibold text-gold-700 uppercase tracking-wider">Our Values</span>
-                </div>
-                <h2 class="text-3xl md:text-4xl font-serif-display font-bold text-zinc-900">
-                    What Drives <span class="text-gold-500">Us</span>
-                </h2>
-            </div>
-
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Quality -->
-                <div class="group bg-[#FAFAF8] rounded-2xl p-8 border border-zinc-100 hover:border-gold-200 hover:shadow-lg hover:shadow-gold-100/50 transition-all duration-300" data-scroll="fade-up" data-scroll-delay="100">
-                    <div class="w-14 h-14 bg-gold-50 border border-gold-100 rounded-xl flex items-center justify-center text-gold-600 mb-6 group-hover:bg-gold-500 group-hover:text-white transition-all duration-300">
-                        <iconify-icon icon="solar:star-bold-duotone" width="28" height="28"></iconify-icon>
-                    </div>
-                    <h3 class="text-lg font-serif-display font-bold text-zinc-900 mb-3">Quality</h3>
-                    <p class="text-sm text-zinc-500 leading-relaxed">We never cut corners. Every project receives our full attention to detail, ensuring pixel-perfect results that exceed expectations.</p>
-                </div>
-
-                <!-- Innovation -->
-                <div class="group bg-[#FAFAF8] rounded-2xl p-8 border border-zinc-100 hover:border-gold-200 hover:shadow-lg hover:shadow-gold-100/50 transition-all duration-300" data-scroll="fade-up" data-scroll-delay="200">
-                    <div class="w-14 h-14 bg-gold-50 border border-gold-100 rounded-xl flex items-center justify-center text-gold-600 mb-6 group-hover:bg-gold-500 group-hover:text-white transition-all duration-300">
-                        <iconify-icon icon="solar:lightbulb-bolt-bold-duotone" width="28" height="28"></iconify-icon>
-                    </div>
-                    <h3 class="text-lg font-serif-display font-bold text-zinc-900 mb-3">Innovation</h3>
-                    <p class="text-sm text-zinc-500 leading-relaxed">We stay at the forefront of technology, leveraging the latest tools and trends to give your business a competitive edge.</p>
-                </div>
-
-                <!-- Trust -->
-                <div class="group bg-[#FAFAF8] rounded-2xl p-8 border border-zinc-100 hover:border-gold-200 hover:shadow-lg hover:shadow-gold-100/50 transition-all duration-300" data-scroll="fade-up" data-scroll-delay="300">
-                    <div class="w-14 h-14 bg-gold-50 border border-gold-100 rounded-xl flex items-center justify-center text-gold-600 mb-6 group-hover:bg-gold-500 group-hover:text-white transition-all duration-300">
-                        <iconify-icon icon="solar:shield-check-bold-duotone" width="28" height="28"></iconify-icon>
-                    </div>
-                    <h3 class="text-lg font-serif-display font-bold text-zinc-900 mb-3">Trust</h3>
-                    <p class="text-sm text-zinc-500 leading-relaxed">Transparency and honesty are at the core of everything we do. We build lasting relationships based on mutual respect and clear communication.</p>
-                </div>
-
-                <!-- Results -->
-                <div class="group bg-[#FAFAF8] rounded-2xl p-8 border border-zinc-100 hover:border-gold-200 hover:shadow-lg hover:shadow-gold-100/50 transition-all duration-300" data-scroll="fade-up" data-scroll-delay="400">
-                    <div class="w-14 h-14 bg-gold-50 border border-gold-100 rounded-xl flex items-center justify-center text-gold-600 mb-6 group-hover:bg-gold-500 group-hover:text-white transition-all duration-300">
-                        <iconify-icon icon="solar:chart-2-bold-duotone" width="28" height="28"></iconify-icon>
-                    </div>
-                    <h3 class="text-lg font-serif-display font-bold text-zinc-900 mb-3">Results</h3>
-                    <p class="text-sm text-zinc-500 leading-relaxed">We are driven by outcomes. Every strategy and solution is designed to deliver measurable results that grow your business.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- OUR TEAM -->
-    <!-- ============================================ -->
-    <section class="py-20 md:py-28">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center mb-16" data-scroll="fade-up">
-                <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-gold-50 border border-gold-100 rounded-full mb-6">
-                    <span class="w-1.5 h-1.5 bg-gold-500 rounded-full"></span>
-                    <span class="text-xs font-semibold text-gold-700 uppercase tracking-wider">Our Team</span>
-                </div>
-                <h2 class="text-3xl md:text-4xl font-serif-display font-bold text-zinc-900">
-                    Meet the <span class="text-gold-500">Experts</span>
-                </h2>
-                <p class="text-zinc-500 mt-4 max-w-xl mx-auto">The talented people behind HB Global Solutions who make the magic happen every day.</p>
-            </div>
-
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Team Member 1 -->
-                <div class="group text-center" data-scroll="fade-up" data-scroll-delay="100">
-                    <div class="relative overflow-hidden rounded-2xl mb-6">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=450&fit=crop&crop=face" alt="Founder & CEO" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div class="absolute bottom-4 left-4 right-4 flex justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-4 group-hover:translate-y-0">
-                            <a href="#" class="w-9 h-9 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-gold-500 transition-colors">
-                                <iconify-icon icon="mdi:linkedin" width="18" height="18"></iconify-icon>
-                            </a>
-                            <a href="#" class="w-9 h-9 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-gold-500 transition-colors">
-                                <iconify-icon icon="mdi:twitter" width="18" height="18"></iconify-icon>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-serif-display font-bold text-zinc-900">Hamza B.</h3>
-                    <p class="text-sm text-gold-600 font-medium mt-1">Founder & CEO</p>
-                    <p class="text-sm text-zinc-500 mt-3 max-w-xs mx-auto">Visionary entrepreneur with a passion for helping businesses thrive in the digital world.</p>
-                </div>
-
-                <!-- Team Member 2 -->
-                <div class="group text-center" data-scroll="fade-up" data-scroll-delay="200">
-                    <div class="relative overflow-hidden rounded-2xl mb-6">
-                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=450&fit=crop&crop=face" alt="Lead Developer" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div class="absolute bottom-4 left-4 right-4 flex justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-4 group-hover:translate-y-0">
-                            <a href="#" class="w-9 h-9 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-gold-500 transition-colors">
-                                <iconify-icon icon="mdi:linkedin" width="18" height="18"></iconify-icon>
-                            </a>
-                            <a href="#" class="w-9 h-9 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-gold-500 transition-colors">
-                                <iconify-icon icon="mdi:github" width="18" height="18"></iconify-icon>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-serif-display font-bold text-zinc-900">Alex D.</h3>
-                    <p class="text-sm text-gold-600 font-medium mt-1">Lead Developer</p>
-                    <p class="text-sm text-zinc-500 mt-3 max-w-xs mx-auto">Full-stack developer crafting clean, performant, and scalable web solutions.</p>
-                </div>
-
-                <!-- Team Member 3 -->
-                <div class="group text-center" data-scroll="fade-up" data-scroll-delay="300">
-                    <div class="relative overflow-hidden rounded-2xl mb-6">
-                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=450&fit=crop&crop=face" alt="Marketing Specialist" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div class="absolute bottom-4 left-4 right-4 flex justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-4 group-hover:translate-y-0">
-                            <a href="#" class="w-9 h-9 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-gold-500 transition-colors">
-                                <iconify-icon icon="mdi:linkedin" width="18" height="18"></iconify-icon>
-                            </a>
-                            <a href="#" class="w-9 h-9 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-gold-500 transition-colors">
-                                <iconify-icon icon="mdi:instagram" width="18" height="18"></iconify-icon>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-serif-display font-bold text-zinc-900">Sophie L.</h3>
-                    <p class="text-sm text-gold-600 font-medium mt-1">Marketing Specialist</p>
-                    <p class="text-sm text-zinc-500 mt-3 max-w-xs mx-auto">Creative strategist turning brands into memorable digital experiences that convert.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- STATS SECTION -->
-    <!-- ============================================ -->
-    <section class="py-20 md:py-28 bg-zinc-900 relative overflow-hidden">
-        <!-- Decorative elements -->
-        <div class="absolute top-0 left-0 w-full h-full">
-            <div class="absolute top-10 left-10 w-40 h-40 bg-gold-500/5 rounded-full blur-3xl animate-float-slow"></div>
-            <div class="absolute bottom-10 right-10 w-60 h-60 bg-gold-500/5 rounded-full blur-3xl animate-float-reverse"></div>
-        </div>
-
-        <div class="max-w-6xl mx-auto px-6 relative z-10">
-            <div class="text-center mb-16" data-scroll="fade-up">
-                <h2 class="text-3xl md:text-4xl font-serif-display font-bold text-white">
-                    Our Numbers Speak <span class="text-gold-400">Louder</span>
-                </h2>
-            </div>
-
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="text-center" data-scroll="zoom-in" data-scroll-delay="100">
-                    <div class="text-4xl md:text-5xl font-serif-display font-bold text-gold-400 mb-2">
-                        <span class="count-up" data-counter="150">0</span>+
-                    </div>
-                    <p class="text-sm text-zinc-400 font-medium uppercase tracking-wider">Projects Completed</p>
-                </div>
-                <div class="text-center" data-scroll="zoom-in" data-scroll-delay="200">
-                    <div class="text-4xl md:text-5xl font-serif-display font-bold text-gold-400 mb-2">
-                        <span class="count-up" data-counter="98">0</span>%
-                    </div>
-                    <p class="text-sm text-zinc-400 font-medium uppercase tracking-wider">Client Satisfaction</p>
-                </div>
-                <div class="text-center" data-scroll="zoom-in" data-scroll-delay="300">
-                    <div class="text-4xl md:text-5xl font-serif-display font-bold text-gold-400 mb-2">
-                        <span class="count-up" data-counter="50">0</span>+
-                    </div>
-                    <p class="text-sm text-zinc-400 font-medium uppercase tracking-wider">Happy Clients</p>
-                </div>
-                <div class="text-center" data-scroll="zoom-in" data-scroll-delay="400">
-                    <div class="text-4xl md:text-5xl font-serif-display font-bold text-gold-400 mb-2">
-                        <span class="count-up" data-counter="5">0</span>+
-                    </div>
-                    <p class="text-sm text-zinc-400 font-medium uppercase tracking-wider">Years Experience</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- CTA BANNER -->
-    <!-- ============================================ -->
-    <section class="py-20 md:py-28 bg-gradient-to-br from-gold-50 via-white to-gold-50/30 relative overflow-hidden">
-        <div class="absolute top-10 right-10 w-32 h-32 bg-gold-200/20 rounded-full blur-2xl animate-float-medium"></div>
-        <div class="absolute bottom-10 left-10 w-24 h-24 bg-gold-300/15 rounded-full blur-xl animate-float-reverse"></div>
-
-        <div class="max-w-4xl mx-auto px-6 text-center relative z-10" data-scroll="zoom-in">
-            <h2 class="text-3xl md:text-4xl font-serif-display font-bold text-zinc-900 mb-6">
-                Ready to Start Your <span class="text-gold-500">Project</span>?
-            </h2>
-            <p class="text-zinc-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-                Let's work together to bring your vision to life. Whether you need a website, marketing strategy, or full digital transformation, we're here to help.
-            </p>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="contact.html" class="inline-flex items-center gap-2 px-8 py-3.5 bg-gold-500 text-white font-semibold rounded-xl hover:bg-gold-600 transition-all duration-300 shadow-lg shadow-gold-500/25 hover:shadow-xl hover:shadow-gold-500/30 hover:-translate-y-0.5">
-                    <iconify-icon icon="solar:chat-round-dots-bold-duotone" width="20" height="20"></iconify-icon>
-                    Get in Touch
-                </a>
-                <a href="tel:+32485050654" class="inline-flex items-center gap-2 px-8 py-3.5 border-2 border-gold-200 text-gold-700 font-semibold rounded-xl hover:bg-gold-50 transition-all duration-300">
-                    <iconify-icon icon="solar:phone-bold-duotone" width="20" height="20"></iconify-icon>
-                    +32 485 050 654
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- FOOTER -->
-    <!-- ============================================ -->
-    <footer class="bg-zinc-900 pt-16 pb-8">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-                <!-- Brand -->
-                <div class="lg:col-span-1">
-                    <a href="index.html" class="flex items-center gap-3 mb-5">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
                         <div class="w-9 h-9 border-2 border-gold-500 text-gold-500 flex items-center justify-center rounded-sm">
                             <span class="text-xs font-bold tracking-tighter font-serif-display">HB</span>
                         </div>
-                        <span class="text-sm font-semibold text-white tracking-tight">HB Global Solutions</span>
-                    </a>
-                    <p class="text-sm text-zinc-400 leading-relaxed">Helping entrepreneurs build, launch, and grow their online presence from Belgium to the world.</p>
+                        <span class="text-sm font-semibold text-white">HB Global Solutions</span>
+                    </div>
+                    <p class="text-sm text-zinc-400 leading-relaxed">We help entrepreneurs build, launch and grow their business online.</p>
                 </div>
-
-                <!-- Quick Links -->
                 <div>
-                    <h4 class="text-sm font-semibold text-white mb-4 uppercase tracking-wider">Quick Links</h4>
-                    <ul class="space-y-2.5">
-                        <li><a href="index.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors">Home</a></li>
-                        <li><a href="services.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors">Services</a></li>
-                        <li><a href="portfolio.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors">Portfolio</a></li>
-                        <li><a href="about.html" class="text-sm text-gold-400">About</a></li>
-                        <li><a href="contact.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors">Contact</a></li>
-                    </ul>
+                    <h4 class="text-sm font-semibold mb-4 text-gold-400">Pages</h4>
+                    <div class="flex flex-col gap-2">
+                        <a href="index.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Home</a>
+                        <a href="services.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Services</a>
+                        <a href="portfolio.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Portfolio</a>
+                        <a href="pricing.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Pricing</a>
+                        <a href="process.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Process</a>
+                    </div>
                 </div>
-
-                <!-- Services -->
                 <div>
-                    <h4 class="text-sm font-semibold text-white mb-4 uppercase tracking-wider">Services</h4>
-                    <ul class="space-y-2.5">
-                        <li><a href="services.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors">Web Development</a></li>
-                        <li><a href="services.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors">SEO Optimization</a></li>
-                        <li><a href="services.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors">Digital Marketing</a></li>
-                        <li><a href="services.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors">Branding</a></li>
-                    </ul>
+                    <h4 class="text-sm font-semibold mb-4 text-gold-400">Services</h4>
+                    <div class="flex flex-col gap-2">
+                        <a href="services.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Website Creation</a>
+                        <a href="services.html" class="text-sm text-zinc-400 hover:text-white transition-colors">SEO Optimization</a>
+                        <a href="services.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Digital Marketing</a>
+                        <a href="services.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Business Launch</a>
+                    </div>
                 </div>
-
-                <!-- Contact -->
                 <div>
-                    <h4 class="text-sm font-semibold text-white mb-4 uppercase tracking-wider">Contact</h4>
-                    <ul class="space-y-2.5">
-                        <li class="flex items-center gap-2">
-                            <iconify-icon icon="solar:phone-bold-duotone" width="16" height="16" class="text-gold-400"></iconify-icon>
-                            <a href="tel:+32485050654" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors">+32 485 050 654</a>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <iconify-icon icon="solar:letter-bold-duotone" width="16" height="16" class="text-gold-400"></iconify-icon>
-                            <a href="mailto:hb.globalsolutions@icloud.com" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors">hb.globalsolutions@icloud.com</a>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <iconify-icon icon="solar:map-point-bold-duotone" width="16" height="16" class="text-gold-400"></iconify-icon>
-                            <span class="text-sm text-zinc-400">Belgium</span>
-                        </li>
-                    </ul>
+                    <h4 class="text-sm font-semibold mb-4 text-gold-400">Contact</h4>
+                    <div class="flex flex-col gap-2">
+                        <a href="tel:+32485050654" class="text-sm text-zinc-400 hover:text-white transition-colors">+32 485 050 654</a>
+                        <a href="mailto:hb.globalsolutions@icloud.com" class="text-sm text-zinc-400 hover:text-white transition-colors">hb.globalsolutions@icloud.com</a>
+                        <a href="https://wa.me/32485050654" class="text-sm text-zinc-400 hover:text-white transition-colors">WhatsApp</a>
+                    </div>
                 </div>
             </div>
-
-            <!-- Bottom bar -->
-            <div class="border-t border-zinc-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="border-t border-zinc-800 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
                 <p class="text-xs text-zinc-500">&copy; 2024 HB Global Solutions. All rights reserved.</p>
-                <div class="flex items-center gap-4">
-                    <a href="#" class="w-9 h-9 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-400 hover:bg-gold-500 hover:text-white transition-all duration-300">
-                        <iconify-icon icon="mdi:facebook" width="18" height="18"></iconify-icon>
-                    </a>
-                    <a href="#" class="w-9 h-9 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-400 hover:bg-gold-500 hover:text-white transition-all duration-300">
-                        <iconify-icon icon="mdi:instagram" width="18" height="18"></iconify-icon>
-                    </a>
-                    <a href="#" class="w-9 h-9 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-400 hover:bg-gold-500 hover:text-white transition-all duration-300">
-                        <iconify-icon icon="mdi:linkedin" width="18" height="18"></iconify-icon>
-                    </a>
+                <div class="flex gap-4">
+                    <a href="#" class="text-xs text-zinc-500 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-xs text-zinc-500 hover:text-white transition-colors">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- ============================================ -->
-    <!-- SCRIPTS -->
-    <!-- ============================================ -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // ===== IntersectionObserver for scroll animations =====
-            const scrollEls = document.querySelectorAll('[data-scroll]');
-            const scrollObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('is-visible');
-                        scrollObserver.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.15 });
-            scrollEls.forEach(el => scrollObserver.observe(el));
-
-            // ===== Counter animation =====
-            const counters = document.querySelectorAll('[data-counter]');
-            const counterObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const el = entry.target;
-                        const target = parseInt(el.getAttribute('data-counter'), 10);
-                        const duration = 2000;
-                        const startTime = performance.now();
-
-                        const animate = (currentTime) => {
-                            const elapsed = currentTime - startTime;
-                            const progress = Math.min(elapsed / duration, 1);
-                            // Ease out cubic
-                            const eased = 1 - Math.pow(1 - progress, 3);
-                            el.textContent = Math.floor(eased * target);
-                            if (progress < 1) {
-                                requestAnimationFrame(animate);
-                            } else {
-                                el.textContent = target;
-                            }
-                        };
-                        requestAnimationFrame(animate);
-                        counterObserver.unobserve(el);
-                    }
-                });
-            }, { threshold: 0.5 });
-            counters.forEach(el => counterObserver.observe(el));
-
-            // ===== Mobile menu toggle =====
-            const menuToggle = document.getElementById('menuToggle');
-            const mobileMenu = document.getElementById('mobileMenu');
-            const menuLine1 = document.getElementById('menuLine1');
-            const menuLine2 = document.getElementById('menuLine2');
-            const menuLine3 = document.getElementById('menuLine3');
-
-            menuToggle.addEventListener('click', () => {
-                mobileMenu.classList.toggle('open');
-                if (mobileMenu.classList.contains('open')) {
-                    menuLine1.style.transform = 'rotate(45deg) translate(3px, 3px)';
-                    menuLine2.style.opacity = '0';
-                    menuLine3.style.transform = 'rotate(-45deg) translate(3px, -3px)';
-                } else {
-                    menuLine1.style.transform = 'none';
-                    menuLine2.style.opacity = '1';
-                    menuLine3.style.transform = 'none';
-                }
-            });
-
-            // ===== Scroll progress bar =====
-            const progressBar = document.getElementById('scrollProgress');
-
-            // ===== Back to top button =====
-            const backToTop = document.getElementById('backToTop');
-            backToTop.addEventListener('click', () => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-
-            // ===== Navbar scroll effect + progress + back-to-top =====
-            const nav = document.querySelector('nav');
-            window.addEventListener('scroll', () => {
-                const currentScroll = window.scrollY;
-                if (currentScroll > 80) {
-                    nav.classList.add('shadow-lg');
-                    nav.style.backdropFilter = 'blur(12px)';
-                } else {
-                    nav.classList.remove('shadow-lg');
-                    nav.style.backdropFilter = 'blur(8px)';
-                }
-
-                // Progress bar
-                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-                const scrollPercent = (currentScroll / docHeight) * 100;
-                progressBar.style.width = scrollPercent + '%';
-
-                // Back to top visibility
-                if (currentScroll > 500) {
-                    backToTop.classList.remove('opacity-0', 'pointer-events-none');
-                    backToTop.classList.add('opacity-100');
-                } else {
-                    backToTop.classList.add('opacity-0', 'pointer-events-none');
-                    backToTop.classList.remove('opacity-100');
-                }
-            }, { passive: true });
-        });
-    </script>
-
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-500 text-white rounded-full shadow-lg shadow-gold-500/30 flex items-center justify-center hover:bg-gold-600 transition-all duration-300 opacity-0 pointer-events-none z-50 hover:scale-110">
-        <iconify-icon icon="solar:arrow-up-linear" width="20" height="20"></iconify-icon>
-    </button>
-
     <!-- WhatsApp Button -->
-    <a href="https://wa.me/32485050654" target="_blank" rel="noopener" id="whatsappBtn" class="fixed bottom-8 left-8 w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg shadow-[#25D366]/30 flex items-center justify-center hover:scale-110 transition-all duration-300 z-50 opacity-0 pointer-events-none">
+    <a href="https://wa.me/32485050654" target="_blank" rel="noopener" class="fixed bottom-8 left-8 w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-all duration-300 z-50">
         <iconify-icon icon="mdi:whatsapp" width="28" height="28"></iconify-icon>
     </a>
 
-    <!-- Cookie Consent Banner -->
-    <div id="cookieBanner" class="fixed bottom-0 left-0 right-0 z-[9998] transition-transform duration-500 translate-y-full">
-        <div class="max-w-6xl mx-auto px-6 pb-6">
-            <div class="bg-zinc-900 rounded-2xl p-6 md:p-8 shadow-2xl border border-zinc-800 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8">
-                <div class="flex-1">
-                    <div class="flex items-center gap-2 mb-2">
-                        <iconify-icon icon="solar:cookie-bold-duotone" width="20" height="20" class="text-gold-400"></iconify-icon>
-                        <h4 class="text-sm font-semibold text-white">We value your privacy</h4>
-                    </div>
-                    <p class="text-xs text-zinc-400 leading-relaxed">
-                        We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. By clicking "Accept All", you consent to our use of cookies in accordance with GDPR.
-                    </p>
-                </div>
-                <div class="flex items-center gap-3 flex-shrink-0">
-                    <button onclick="acceptCookies('essential')" class="px-4 py-2.5 text-xs font-semibold text-zinc-400 border border-zinc-700 rounded-lg hover:border-zinc-500 hover:text-white transition-colors">
-                        Essential Only
-                    </button>
-                    <button onclick="acceptCookies('all')" class="px-5 py-2.5 text-xs font-semibold text-zinc-900 bg-gold-400 rounded-lg hover:bg-gold-500 transition-colors">
-                        Accept All
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Back to top -->
+    <button onclick="window.scrollTo({top:0,behavior:'smooth'})" id="backToTop" class="fixed bottom-8 right-8 w-10 h-10 bg-gold-500 text-white rounded-full shadow-lg flex items-center justify-center hover:bg-gold-600 transition-all z-50 opacity-0 pointer-events-none">
+        <iconify-icon icon="solar:arrow-up-linear" width="18" height="18"></iconify-icon>
+    </button>
 
     <script>
-        // Cookie consent
-        function acceptCookies(type) {
-            localStorage.setItem('cookieConsent', type);
-            document.getElementById('cookieBanner').classList.add('translate-y-full');
-        }
-        // Show banner if no consent
-        if (!localStorage.getItem('cookieConsent')) {
-            setTimeout(() => {
-                document.getElementById('cookieBanner').classList.remove('translate-y-full');
-            }, 2000);
-        }
-        // WhatsApp button visibility
-        const waBtn = document.getElementById('whatsappBtn');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 500) {
-                waBtn.classList.remove('opacity-0', 'pointer-events-none');
-                waBtn.classList.add('opacity-100');
-            } else {
-                waBtn.classList.add('opacity-0', 'pointer-events-none');
-                waBtn.classList.remove('opacity-100');
-            }
-        }, { passive: true });
+        // Scroll animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const scrollElements = document.querySelectorAll('[data-scroll]');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+            scrollElements.forEach(el => observer.observe(el));
+
+            // Back to top
+            const btn = document.getElementById('backToTop');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 400) {
+                    btn.style.opacity = '1';
+                    btn.style.pointerEvents = 'auto';
+                } else {
+                    btn.style.opacity = '0';
+                    btn.style.pointerEvents = 'none';
+                }
+            }, { passive: true });
+
+            // Navbar shadow
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 80) {
+                    nav.classList.add('shadow-lg');
+                } else {
+                    nav.classList.remove('shadow-lg');
+                }
+            }, { passive: true });
+        });
     </script>
 
 </body>
