@@ -11,22 +11,8 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nous Contacter - HB Global Solutions</title>
-    <meta name="description" content="Contact HB Global Solutions for your web project. Phone: +32 485 050 654, Email: hb.globalsolutions@icloud.com. Free consultation available. Belgium-based digital agency.">
-    <meta name="keywords" content="contact HB Global Solutions, web design quote, free consultation Belgium, digital agency contact">
-    <meta name="author" content="HB Global Solutions">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://hb-globalsolutions.com/contact.html">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hb-globalsolutions.com/contact.html">
-    <meta property="og:title" content="Nous Contacter - HB Global Solutions">
-    <meta property="og:description" content="Get in touch for a free consultation. Phone: +32 485 050 654. Belgium-based digital agency.">
-    <meta property="og:image" content="https://hb-globalsolutions.com/og-image.jpg">
-    <meta property="og:site_name" content="HB Global Solutions">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Nous Contacter - HB Global Solutions">
-    <meta name="twitter:description" content="Contact HB Global Solutions for your web project in Belgium.">
-    <meta name="twitter:image" content="https://hb-globalsolutions.com/og-image.jpg">
+    <title>Contactez-Nous - HB Global Solutions</title>
+    <meta name="description" content="Get in touch with HB Global Solutions. Free consultation for your web project in Belgium.">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23C5A55A'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-weight='bold' font-size='14' fill='white'>HB</text></svg>">
     <meta name="theme-color" content="#C5A55A">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -36,16 +22,9 @@
                 extend: {
                     colors: {
                         gold: {
-                            50: '#FBF7EC',
-                            100: '#F5ECD3',
-                            200: '#EBDAA8',
-                            300: '#DFC57A',
-                            400: '#D4B155',
-                            500: '#C5A55A',
-                            600: '#A8893A',
-                            700: '#7F6A2E',
-                            800: '#574A20',
-                            900: '#2E2711',
+                            50: '#FBF7EC', 100: '#F5ECD3', 200: '#EBDAA8', 300: '#DFC57A',
+                            400: '#D4B155', 500: '#C5A55A', 600: '#A8893A', 700: '#7F6A2E',
+                            800: '#574A20', 900: '#2E2711',
                         }
                     }
                 }
@@ -60,95 +39,24 @@
         .font-serif-display { font-family: 'Playfair Display', Georgia, serif; }
         .font-sans { font-family: 'Inter', sans-serif; }
         html { scroll-behavior: smooth; }
-
-        /* Floating animations */
-        @keyframes float-slow {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(3deg); }
-        }
-        @keyframes float-medium {
-            0%, 100% { transform: translateY(0px) translateX(0px); }
-            33% { transform: translateY(-15px) translateX(10px); }
-            66% { transform: translateY(-8px) translateX(-8px); }
-        }
-        @keyframes float-reverse {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(15px) rotate(-3deg); }
-        }
-        @keyframes pulse-glow {
-            0%, 100% { opacity: 0.3; transform: scale(1); }
-            50% { opacity: 0.6; transform: scale(1.05); }
-        }
-        @keyframes spin-slow {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-        @keyframes shimmer {
-            0% { background-position: -200% center; }
-            100% { background-position: 200% center; }
-        }
-        @keyframes fade-in-up {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-float-slow { animation: float-slow 6s ease-in-out infinite; }
-        .animate-float-medium { animation: float-medium 5s ease-in-out infinite; }
-        .animate-float-reverse { animation: float-reverse 7s ease-in-out infinite; }
-        .animate-pulse-glow { animation: pulse-glow 4s ease-in-out infinite; }
-        .animate-spin-slow { animation: spin-slow 20s linear infinite; }
-        .animate-shimmer {
-            background: linear-gradient(90deg, transparent 0%, rgba(197,165,90,0.08) 50%, transparent 100%);
-            background-size: 200% 100%;
-            animation: shimmer 3s ease-in-out infinite;
-        }
-        .animate-fade-in { animation: fade-in-up 0.8s ease-out both; }
-        .animate-fade-in-d1 { animation: fade-in-up 0.8s ease-out 0.1s both; }
-        .animate-fade-in-d2 { animation: fade-in-up 0.8s ease-out 0.2s both; }
-        .animate-fade-in-d3 { animation: fade-in-up 0.8s ease-out 0.3s both; }
-        .animate-fade-in-d4 { animation: fade-in-up 0.8s ease-out 0.4s both; }
-        .animate-fade-in-d5 { animation: fade-in-up 0.8s ease-out 0.5s both; }
-
-        /* Mobile menu */
         .mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
-        .mobile-menu.open { max-height: 400px; }
-
-        /* ===== Scroll-triggered animations ===== */
-        [data-scroll] {
-            opacity: 0;
-            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        [data-scroll].is-visible {
-            opacity: 1;
-            transform: none !important;
-        }
-        /* Animation variants */
+        .mobile-menu.open { max-height: 500px; }
+        [data-scroll] { opacity: 0; transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+        [data-scroll].is-visible { opacity: 1; transform: none !important; }
         [data-scroll="fade-up"] { transform: translateY(40px); }
-        [data-scroll="fade-down"] { transform: translateY(-40px); }
         [data-scroll="fade-left"] { transform: translateX(40px); }
         [data-scroll="fade-right"] { transform: translateX(-40px); }
         [data-scroll="zoom-in"] { transform: scale(0.9); }
-        [data-scroll="fade"] { transform: none; }
-        /* Stagger delays */
         [data-scroll-delay="100"] { transition-delay: 0.1s; }
         [data-scroll-delay="200"] { transition-delay: 0.2s; }
         [data-scroll-delay="300"] { transition-delay: 0.3s; }
         [data-scroll-delay="400"] { transition-delay: 0.4s; }
         [data-scroll-delay="500"] { transition-delay: 0.5s; }
         [data-scroll-delay="600"] { transition-delay: 0.6s; }
-        [data-scroll-delay="700"] { transition-delay: 0.7s; }
-        /* Slower/faster durations */
-        [data-scroll-duration="fast"] { transition-duration: 0.5s; }
-        [data-scroll-duration="slow"] { transition-duration: 1.2s; }
     </style>
 </head>
 <body class="bg-[#FAFAF8] text-zinc-800 antialiased selection:bg-gold-100 selection:text-gold-900 font-sans">
 
-    <!-- Scroll Progress Bar -->
-    <div id="scrollProgress" class="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-gold-400 to-gold-600 z-[9999] transition-none" style="width: 0%;"></div>
-
-    <!-- ============================================ -->
-    <!-- NAVIGATION -->
-    <!-- ============================================ -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-zinc-200/80">
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
             <a href="../fr/index.html" class="flex items-center gap-3">
@@ -161,391 +69,211 @@
                 <a href="../fr/index.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Accueil</a>
                 <a href="../fr/services.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Services</a>
                 <a href="../fr/portfolio.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Portfolio</a>
-                <a href="../fr/index.html#pricing" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Tarifs</a>
+                <a href="../fr/pricing.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Tarifs</a>
+                <a href="../fr/process.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">Processus</a>
                 <a href="../fr/about.html" class="text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors uppercase tracking-wider">À Propos</a>
                 <a href="../fr/contact.html" class="text-xs font-medium text-gold-600 uppercase tracking-wider">Contact</a>
             </div>
-            <!-- Mobile hamburger -->
-            <button id="mobileMenuBtn" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
-                <span class="w-5 h-0.5 bg-zinc-700 transition-all duration-300" id="bar1"></span>
-                <span class="w-5 h-0.5 bg-zinc-700 transition-all duration-300" id="bar2"></span>
-                <span class="w-5 h-0.5 bg-zinc-700 transition-all duration-300" id="bar3"></span>
-            </button>
+            <div class="flex items-center gap-3">
+                <div class="relative group">
+                    <div class="flex items-center gap-1.5 text-xs text-zinc-500 border border-zinc-300 rounded-sm px-2.5 py-1 cursor-pointer hover:border-zinc-400 transition-colors">
+                        <span>FR</span>
+                        <iconify-icon icon="solar:alt-arrow-down-linear" width="12" height="12" class="transition-transform group-hover:rotate-180"></iconify-icon>
+                    </div>
+                    <div class="absolute top-full right-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                        <div class="bg-white rounded-lg shadow-xl border border-zinc-100 py-1 w-28">
+                            <span class="block px-4 py-2 text-xs font-semibold text-gold-600 bg-gold-50/50">🇫🇷 Français</span>
+                            <a href="../index.html" class="block px-4 py-2 text-xs text-zinc-600 hover:bg-gold-50/50 hover:text-gold-600 transition-colors">🇬🇧 English</a>
+                            <a href="../nl/index.html" class="block px-4 py-2 text-xs text-zinc-600 hover:bg-gold-50/50 hover:text-gold-600 transition-colors">🇧🇪 Nederlands</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="../fr/contact.html" class="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 bg-gold-500 text-white text-xs font-semibold rounded-full hover:bg-gold-600 transition-all duration-300 uppercase tracking-wider shadow-sm hover:shadow-md">
+                    Get Started
+                </a>
+                <button id="menuBtn" onclick="document.getElementById('mobileMenu').classList.toggle('open')" class="lg:hidden flex items-center justify-center w-9 h-9 text-zinc-700">
+                    <iconify-icon icon="solar:hamburger-menu-linear" width="22" height="22"></iconify-icon>
+                </button>
+            </div>
         </div>
-        <!-- Mobile Menu -->
         <div id="mobileMenu" class="mobile-menu lg:hidden bg-white border-t border-zinc-100">
-            <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-3">
-                <a href="../fr/index.html" class="text-sm font-medium text-zinc-600 hover:text-gold-600 transition-colors py-2">Accueil</a>
-                <a href="../fr/services.html" class="text-sm font-medium text-zinc-600 hover:text-gold-600 transition-colors py-2">Services</a>
-                <a href="../fr/portfolio.html" class="text-sm font-medium text-zinc-600 hover:text-gold-600 transition-colors py-2">Portfolio</a>
-                <a href="../fr/index.html#pricing" class="text-sm font-medium text-zinc-600 hover:text-gold-600 transition-colors py-2">Tarifs</a>
-                <a href="../fr/about.html" class="text-sm font-medium text-zinc-600 hover:text-gold-600 transition-colors py-2">À Propos</a>
-                <a href="../fr/contact.html" class="text-sm font-medium text-gold-600 py-2">Contact</a>
+            <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
+                <a href="../fr/index.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">Accueil</a>
+                <a href="../fr/services.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">Services</a>
+                <a href="../fr/portfolio.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">Portfolio</a>
+                <a href="../fr/pricing.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">Tarifs</a>
+                <a href="../fr/process.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">Processus</a>
+                <a href="../fr/about.html" class="text-sm font-medium text-zinc-700 py-2.5 border-b border-zinc-100">À Propos</a>
+                <a href="../fr/contact.html" class="mt-3 px-4 py-3 bg-gold-500 text-white text-sm font-semibold rounded-full text-center hover:bg-gold-600 transition-colors uppercase tracking-wider">Commencer</a>
             </div>
         </div>
     </nav>
 
-    <!-- ============================================ -->
-    <!-- HERO SECTION -->
-    <!-- ============================================ -->
-    <section class="relative pt-32 pb-16 overflow-hidden">
-        <!-- Decorative floating elements -->
-        <div class="absolute top-24 left-[8%] w-16 h-16 rounded-full border border-gold-200/40 animate-float-slow"></div>
-        <div class="absolute top-40 right-[12%] w-10 h-10 rounded-full bg-gold-100/30 animate-float-medium"></div>
-        <div class="absolute bottom-10 left-[20%] w-8 h-8 rounded-full border border-gold-300/20 animate-float-reverse"></div>
-        <div class="absolute top-32 right-[30%] w-6 h-6 rounded-full bg-gold-200/20 animate-pulse-glow"></div>
-        <div class="absolute bottom-0 right-[8%] w-24 h-24 rounded-full border border-gold-100/20 animate-spin-slow"></div>
-
-        <div class="max-w-6xl mx-auto px-6 text-center relative z-10">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif-display font-bold text-zinc-900 mb-4 animate-fade-in">
-                Contact <span class="text-gold-500">Us</span>
-            </h1>
-            <p class="text-zinc-500 text-sm md:text-base max-w-xl mx-auto mb-6 animate-fade-in-d1">
-                Ready to bring your digital vision to life? Get in touch and let's start building something great together.
-            </p>
-            <!-- Breadcrumb -->
-            <nav class="flex items-center justify-center gap-2 text-xs text-zinc-400 animate-fade-in-d2">
-                <a href="../fr/index.html" class="hover:text-gold-600 transition-colors">Accueil</a>
-                <iconify-icon icon="solar:arrow-right-linear" width="12" height="12"></iconify-icon>
-                <span class="text-gold-600 font-medium">Contact</span>
-            </nav>
+    <section class="pt-28 pb-16 bg-gradient-to-b from-gold-50/30 to-transparent">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-xs font-semibold text-gold-600 uppercase tracking-[0.2em] mb-4" data-scroll="fade-up">Contactez-Nous</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-zinc-900 mb-4 font-serif-display" data-scroll="fade-up" data-scroll-delay="100">Contactez-<em class="text-gold-500 italic">Nous</em></h1>
+            <p class="text-zinc-500 max-w-xl mx-auto" data-scroll="fade-up" data-scroll-delay="200">Prêt à start your project? We'd love to hear from you.</p>
+            <div class="mt-4 text-sm text-zinc-400"><a href="../fr/index.html" class="hover:text-gold-500">Accueil</a> <span class="mx-2">/</span> <span class="text-zinc-700">Contact</span></div>
         </div>
     </section>
 
-    <!-- ============================================ -->
-    <!-- MAIN CONTACT SECTION -->
-    <!-- ============================================ -->
-    <section class="py-16 relative">
+    <section class="py-20">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <!-- Contact Info -->
+            <div data-scroll="fade-right">
+                <h2 class="text-2xl font-bold text-zinc-900 mb-6 font-serif-display">Démarrons Votre <em class="text-gold-500 italic">Projet Ensemble</em></h2>
+                <p class="text-zinc-500 mb-8 leading-relaxed">Remplissez le formulaire et nous vous recontacterons sous 24h avec une consultation gratuite.</p>
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gold-50 border border-gold-100 rounded-xl flex items-center justify-center text-gold-600">
+                            <iconify-icon icon="solar:letter-linear" width="22"></iconify-icon>
+                        </div>
+                        <div>
+                            <p class="text-xs text-zinc-400">Email</p>
+                            <a href="mailto:hb.globalsolutions@icloud.com" class="text-sm font-medium text-zinc-900 hover:text-gold-500 transition-colors">hb.globalsolutions@icloud.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gold-50 border border-gold-100 rounded-xl flex items-center justify-center text-gold-600">
+                            <iconify-icon icon="solar:phone-linear" width="22"></iconify-icon>
+                        </div>
+                        <div>
+                            <p class="text-xs text-zinc-400">Téléphone</p>
+                            <a href="tel:+32485050654" class="text-sm font-medium text-zinc-900 hover:text-gold-500 transition-colors">+32 485 050 654</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gold-50 border border-gold-100 rounded-xl flex items-center justify-center text-gold-600">
+                            <iconify-icon icon="mdi:whatsapp" width="22"></iconify-icon>
+                        </div>
+                        <div>
+                            <p class="text-xs text-zinc-400">WhatsApp</p>
+                            <a href="https://wa.me/32485050654" class="text-sm font-medium text-zinc-900 hover:text-gold-500 transition-colors">Discuter avec nous</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gold-50 border border-gold-100 rounded-xl flex items-center justify-center text-gold-600">
+                            <iconify-icon icon="solar:map-point-linear" width="22"></iconify-icon>
+                        </div>
+                        <div>
+                            <p class="text-xs text-zinc-400">Localisation</p>
+                            <p class="text-sm font-medium text-zinc-900">Belgium</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Form -->
+            <div class="bg-white rounded-2xl p-8 border border-zinc-200 shadow-sm" data-scroll="fade-left" data-scroll-delay="200">
+                <form id="contactForm" action="https://formspree.io/f/mzdklbjk" method="POST" class="space-y-5">
+                    <input type="hidden" name="_subject" value="New inquiry from HB Global Solutions - Contact Page">
+                    <input type="text" name="_gotcha" style="display:none">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-sm font-medium text-zinc-700 mb-1.5">Prénom</label>
+                            <input type="text" name="first_name" required class="block w-full px-3 py-2.5 bg-white border border-zinc-300 rounded-lg text-sm focus:ring-2 focus:ring-gold-500 focus:border-gold-500" placeholder="Jean">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-zinc-700 mb-1.5">Nom</label>
+                            <input type="text" name="last_name" required class="block w-full px-3 py-2.5 bg-white border border-zinc-300 rounded-lg text-sm focus:ring-2 focus:ring-gold-500 focus:border-gold-500" placeholder="Dupont">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-zinc-700 mb-1.5">Email</label>
+                        <input type="email" name="email" required class="block w-full px-3 py-2.5 bg-white border border-zinc-300 rounded-lg text-sm focus:ring-2 focus:ring-gold-500 focus:border-gold-500" placeholder="jean@exemple.be">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-zinc-700 mb-1.5">Téléphone</label>
+                        <input type="tel" name="phone" class="block w-full px-3 py-2.5 bg-white border border-zinc-300 rounded-lg text-sm focus:ring-2 focus:ring-gold-500 focus:border-gold-500" placeholder="+32 ...">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-zinc-700 mb-1.5">Service Souhaité</label>
+                        <select name="service" class="block w-full px-3 py-2.5 bg-white border border-zinc-300 rounded-lg text-sm focus:ring-2 focus:ring-gold-500 focus:border-gold-500">
+                            <option>Création de Sites Web</option>
+                            <option>Optimisation SEO</option>
+                            <option>Marketing Digital</option>
+                            <option>Lancement d'Entreprise Support</option>
+                            <option>Systèmes d'Automatisation</option>
+                            <option>Pack Complet</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-zinc-700 mb-1.5">Message</label>
+                        <textarea rows="4" name="message" required class="block w-full px-3 py-2.5 bg-white border border-zinc-300 rounded-lg text-sm focus:ring-2 focus:ring-gold-500 focus:border-gold-500" placeholder="Parlez-nous de votre projet..."></textarea>
+                    </div>
+                    <button type="submit" id="submitBtn" class="w-full py-3.5 bg-gold-500 text-white font-semibold rounded-full hover:bg-gold-600 transition-all uppercase tracking-wider text-sm shadow-lg">Envoyer</button>
+                    <div id="formSuccess" class="hidden text-center py-4 px-6 bg-emerald-50 border border-emerald-200 rounded-lg">
+                        <p class="text-sm font-semibold text-emerald-800">Message envoyé avec succès !</p>
+                        <p class="text-xs text-emerald-600 mt-1">Nous vous recontacterons sous 24 heures.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-zinc-900 text-white pt-16 pb-8">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-5 gap-10">
-
-                <!-- LEFT COLUMN - Contact Info Cards -->
-                <div class="lg:col-span-2 flex flex-col gap-4" data-scroll="fade-right">
-                    <!-- Email Card -->
-                    <div class="bg-white rounded-xl border border-zinc-100 p-5 flex items-center gap-4 hover:shadow-md transition-shadow" data-scroll="fade-up" data-scroll-delay="100">
-                        <div class="w-11 h-11 bg-gold-50 rounded-full flex items-center justify-center flex-shrink-0">
-                            <iconify-icon icon="solar:letter-bold-duotone" width="22" height="22" class="text-gold-500"></iconify-icon>
-                        </div>
-                        <div>
-                            <p class="text-xs text-zinc-400 font-medium uppercase tracking-wider mb-1">Email</p>
-                            <a href="mailto:hb.globalsolutions@icloud.com" class="text-sm text-zinc-700 hover:text-gold-600 transition-colors font-medium break-all">hb.globalsolutions@icloud.com</a>
-                        </div>
-                    </div>
-
-                    <!-- Phone Card -->
-                    <div class="bg-white rounded-xl border border-zinc-100 p-5 flex items-center gap-4 hover:shadow-md transition-shadow" data-scroll="fade-up" data-scroll-delay="200">
-                        <div class="w-11 h-11 bg-gold-50 rounded-full flex items-center justify-center flex-shrink-0">
-                            <iconify-icon icon="solar:phone-bold-duotone" width="22" height="22" class="text-gold-500"></iconify-icon>
-                        </div>
-                        <div>
-                            <p class="text-xs text-zinc-400 font-medium uppercase tracking-wider mb-1">Téléphone</p>
-                            <a href="tel:+32485050654" class="text-sm text-zinc-700 hover:text-gold-600 transition-colors font-medium">+32 485 050 654</a>
-                        </div>
-                    </div>
-
-                    <!-- WhatsApp Card -->
-                    <div class="bg-white rounded-xl border border-zinc-100 p-5 flex items-center gap-4 hover:shadow-md transition-shadow" data-scroll="fade-up" data-scroll-delay="300">
-                        <div class="w-11 h-11 bg-gold-50 rounded-full flex items-center justify-center flex-shrink-0">
-                            <iconify-icon icon="mdi:whatsapp" width="22" height="22" class="text-gold-500"></iconify-icon>
-                        </div>
-                        <div>
-                            <p class="text-xs text-zinc-400 font-medium uppercase tracking-wider mb-1">WhatsApp</p>
-                            <a href="https://wa.me/32485050654" target="_blank" rel="noopener" class="text-sm text-zinc-700 hover:text-gold-600 transition-colors font-medium">+32 485 050 654</a>
-                        </div>
-                    </div>
-
-                    <!-- Location Card -->
-                    <div class="bg-white rounded-xl border border-zinc-100 p-5 flex items-center gap-4 hover:shadow-md transition-shadow" data-scroll="fade-up" data-scroll-delay="400">
-                        <div class="w-11 h-11 bg-gold-50 rounded-full flex items-center justify-center flex-shrink-0">
-                            <iconify-icon icon="solar:map-point-bold-duotone" width="22" height="22" class="text-gold-500"></iconify-icon>
-                        </div>
-                        <div>
-                            <p class="text-xs text-zinc-400 font-medium uppercase tracking-wider mb-1">Localisation</p>
-                            <p class="text-sm text-zinc-700 font-medium">Belgium</p>
-                        </div>
-                    </div>
-
-                    <!-- Hours Card -->
-                    <div class="bg-white rounded-xl border border-zinc-100 p-5 flex items-center gap-4 hover:shadow-md transition-shadow" data-scroll="fade-up" data-scroll-delay="500">
-                        <div class="w-11 h-11 bg-gold-50 rounded-full flex items-center justify-center flex-shrink-0">
-                            <iconify-icon icon="solar:clock-circle-bold-duotone" width="22" height="22" class="text-gold-500"></iconify-icon>
-                        </div>
-                        <div>
-                            <p class="text-xs text-zinc-400 font-medium uppercase tracking-wider mb-1">Business Hours</p>
-                            <p class="text-sm text-zinc-700 font-medium">Lun-Ven 9:00 - 18:00</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- RIGHT COLUMN - Contact Form -->
-                <div class="lg:col-span-3" data-scroll="fade-left" data-scroll-delay="200">
-                    <div class="bg-white rounded-2xl border border-zinc-100 p-8 shadow-sm">
-                        <h2 class="text-xl font-semibold text-zinc-900 mb-1">Send us a message</h2>
-                        <p class="text-sm text-zinc-400 mb-6">Fill in the form below and we'll get back to you within 24 hours.</p>
-
-                        <form id="contactForm" class="space-y-5">
-                            <!-- First Name + Last Name -->
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                <div>
-                                    <label for="firstName" class="block text-xs font-medium text-zinc-500 mb-1.5">Prénom</label>
-                                    <input type="text" id="firstName" name="firstName" placeholder="Jean" required
-                                        class="w-full bg-zinc-50 border border-zinc-200 rounded-lg px-4 py-3 text-sm text-zinc-800 placeholder:text-zinc-300 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none transition">
-                                </div>
-                                <div>
-                                    <label for="lastName" class="block text-xs font-medium text-zinc-500 mb-1.5">Nom</label>
-                                    <input type="text" id="lastName" name="lastName" placeholder="Dupont" required
-                                        class="w-full bg-zinc-50 border border-zinc-200 rounded-lg px-4 py-3 text-sm text-zinc-800 placeholder:text-zinc-300 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none transition">
-                                </div>
-                            </div>
-
-                            <!-- Email -->
-                            <div>
-                                <label for="email" class="block text-xs font-medium text-zinc-500 mb-1.5">Email</label>
-                                <input type="email" id="email" name="email" placeholder="jean@exemple.be" required
-                                    class="w-full bg-zinc-50 border border-zinc-200 rounded-lg px-4 py-3 text-sm text-zinc-800 placeholder:text-zinc-300 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none transition">
-                            </div>
-
-                            <!-- Phone -->
-                            <div>
-                                <label for="phone" class="block text-xs font-medium text-zinc-500 mb-1.5">Téléphone</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+32 000 000 000"
-                                    class="w-full bg-zinc-50 border border-zinc-200 rounded-lg px-4 py-3 text-sm text-zinc-800 placeholder:text-zinc-300 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none transition">
-                            </div>
-
-                            <!-- Service Dropdown -->
-                            <div>
-                                <label for="service" class="block text-xs font-medium text-zinc-500 mb-1.5">Service Interested In</label>
-                                <select id="service" name="service"
-                                    class="w-full bg-zinc-50 border border-zinc-200 rounded-lg px-4 py-3 text-sm text-zinc-800 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none transition appearance-none">
-                                    <option value="" disabled selected>Select a service</option>
-                                    <option value="website-creation">Création de Sites Web</option>
-                                    <option value="seo-optimization">Optimisation SEO</option>
-                                    <option value="digital-marketing">Marketing Digital</option>
-                                    <option value="business-launch">Lancement d'Entreprise</option>
-                                    <option value="automation">Automatisation</option>
-                                    <option value="maintenance-support">Maintenance & Support</option>
-                                </select>
-                            </div>
-
-                            <!-- Budget Dropdown -->
-                            <div>
-                                <label for="budget" class="block text-xs font-medium text-zinc-500 mb-1.5">Budget Range</label>
-                                <select id="budget" name="budget"
-                                    class="w-full bg-zinc-50 border border-zinc-200 rounded-lg px-4 py-3 text-sm text-zinc-800 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none transition appearance-none">
-                                    <option value="" disabled selected>Select your budget</option>
-                                    <option value="500-1000">&euro;500 - &euro;1,000</option>
-                                    <option value="1000-2500">&euro;1,000 - &euro;2,500</option>
-                                    <option value="2500-5000">&euro;2,500 - &euro;5,000</option>
-                                    <option value="5000+">&euro;5,000+</option>
-                                </select>
-                            </div>
-
-                            <!-- Message -->
-                            <div>
-                                <label for="message" class="block text-xs font-medium text-zinc-500 mb-1.5">Message</label>
-                                <textarea id="message" name="message" rows="4" placeholder="Parlez-nous de votre projet..." required
-                                    class="w-full bg-zinc-50 border border-zinc-200 rounded-lg px-4 py-3 text-sm text-zinc-800 placeholder:text-zinc-300 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 outline-none transition resize-none"></textarea>
-                            </div>
-
-                            <!-- Submit Button -->
-                            <button type="submit"
-                                class="bg-gold-500 hover:bg-gold-600 text-white rounded-lg w-full py-3.5 font-semibold text-sm transition-colors duration-300 flex items-center justify-center gap-2">
-                                <span>Envoyer</span>
-                                <iconify-icon icon="solar:arrow-right-linear" width="16" height="16"></iconify-icon>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- GOOGLE MAPS SECTION -->
-    <!-- ============================================ -->
-    <section class="py-16" data-scroll="fade-up">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center mb-8" data-scroll="fade-up">
-                <h2 class="text-2xl md:text-3xl font-serif-display font-bold text-zinc-900 mb-2">Our Location</h2>
-                <p class="text-sm text-zinc-400">Based in Belgium, serving clients worldwide</p>
-            </div>
-            <div class="relative rounded-2xl overflow-hidden shadow-sm border border-zinc-100" data-scroll="zoom-in" data-scroll-delay="200">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621195.981786798!2d2.3514616!3d50.503887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f39c3a8e1d1d%3A0x8a254db0f9e0c50!2sBelgium!5e0!3m2!1sen!2sbe!4v1700000000000!5m2!1sen!2sbe"
-                    width="100%"
-                    height="400"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    class="w-full"
-                ></iframe>
-                <!-- Map overlay label -->
-                <div class="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg px-4 py-2.5 shadow-md border border-zinc-100 flex items-center gap-2">
-                    <iconify-icon icon="solar:map-point-bold-duotone" width="18" height="18" class="text-gold-500"></iconify-icon>
-                    <span class="text-sm font-medium text-zinc-700">HB Global Solutions - Belgium</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- MINI FAQ SECTION -->
-    <!-- ============================================ -->
-    <section class="py-16" data-scroll="fade-up">
-        <div class="max-w-3xl mx-auto px-6">
-            <div class="text-center mb-10" data-scroll="fade-up">
-                <h2 class="text-2xl md:text-3xl font-serif-display font-bold text-zinc-900 mb-2">Frequently Asked Questions</h2>
-                <p class="text-sm text-zinc-400">Quick answers to common questions</p>
-            </div>
-
-            <div class="space-y-3">
-                <!-- FAQ 1 -->
-                <div class="bg-white rounded-xl border border-zinc-100 overflow-hidden" data-scroll="fade-up" data-scroll-delay="100">
-                    <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left hover:bg-zinc-50/50 transition-colors">
-                        <span class="text-sm font-semibold text-zinc-800">En combien de temps répondez-vous ?</span>
-                        <iconify-icon icon="solar:alt-arrow-down-linear" width="18" height="18" class="text-zinc-400 transition-transform duration-300 faq-icon"></iconify-icon>
-                    </button>
-                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
-                        <div class="px-5 pb-5 pt-0">
-                            <p class="text-sm text-zinc-500 leading-relaxed">Sous 24h les jours ouvrables. We understand the importance of timely communication and make it a priority to respond to all inquiries as quickly as possible.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- FAQ 2 -->
-                <div class="bg-white rounded-xl border border-zinc-100 overflow-hidden" data-scroll="fade-up" data-scroll-delay="200">
-                    <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left hover:bg-zinc-50/50 transition-colors">
-                        <span class="text-sm font-semibold text-zinc-800">Offrez-vous des consultations gratuites ?</span>
-                        <iconify-icon icon="solar:alt-arrow-down-linear" width="18" height="18" class="text-zinc-400 transition-transform duration-300 faq-icon"></iconify-icon>
-                    </button>
-                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
-                        <div class="px-5 pb-5 pt-0">
-                            <p class="text-sm text-zinc-500 leading-relaxed">Yes, the first consultation is always free. We believe in understanding your needs before making any commitments, so feel free to reach out without any obligations.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- FAQ 3 -->
-                <div class="bg-white rounded-xl border border-zinc-100 overflow-hidden" data-scroll="fade-up" data-scroll-delay="300">
-                    <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left hover:bg-zinc-50/50 transition-colors">
-                        <span class="text-sm font-semibold text-zinc-800">Quel est le meilleur moyen de vous contacter ?</span>
-                        <iconify-icon icon="solar:alt-arrow-down-linear" width="18" height="18" class="text-zinc-400 transition-transform duration-300 faq-icon"></iconify-icon>
-                    </button>
-                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
-                        <div class="px-5 pb-5 pt-0">
-                            <p class="text-sm text-zinc-500 leading-relaxed">WhatsApp or email for the fastest response. You can also call us during business hours. We're always happy to hear from you through any channel that's most convenient for you.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- FOOTER -->
-    <!-- ============================================ -->
-    <footer class="bg-zinc-900 pt-16 pb-8 relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-full h-[1px] animate-shimmer"></div>
-        <div class="absolute top-10 right-[10%] w-20 h-20 rounded-full border border-gold-500/5 animate-float-slow"></div>
-
-        <div class="max-w-6xl mx-auto px-6 relative z-10">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-                <!-- Brand -->
-                <div class="md:col-span-2">
+                <div>
                     <div class="flex items-center gap-3 mb-4">
                         <div class="w-9 h-9 border-2 border-gold-500 text-gold-500 flex items-center justify-center rounded-sm">
                             <span class="text-xs font-bold tracking-tighter font-serif-display">HB</span>
                         </div>
-                        <span class="text-sm font-semibold text-white tracking-tight">HB Global Solutions</span>
+                        <span class="text-sm font-semibold text-white">HB Global Solutions</span>
                     </div>
-                    <p class="text-sm text-zinc-500 leading-relaxed max-w-sm mb-4">
-                        Nous aidons les entrepreneurs à créer, lancer et développer leur entreprise en ligne. De la création de sites web au marketing digital, nous sommes votre partenaire pour le succès digital.
-                    </p>
-                    <div class="space-y-2">
-                        <a href="mailto:hb.globalsolutions@icloud.com" class="flex items-center gap-2 text-sm text-zinc-500 hover:text-gold-500 transition-colors">
-                            <iconify-icon icon="solar:letter-bold-duotone" width="16" height="16" class="text-gold-500/60"></iconify-icon>
-                            hb.globalsolutions@icloud.com
-                        </a>
-                        <a href="tel:+32485050654" class="flex items-center gap-2 text-sm text-zinc-500 hover:text-gold-500 transition-colors">
-                            <iconify-icon icon="solar:phone-bold-duotone" width="16" height="16" class="text-gold-500/60"></iconify-icon>
-                            +32 485 050 654
-                        </a>
+                    <p class="text-sm text-zinc-400 leading-relaxed">Nous aidons les entrepreneurs à créer, lancer et développer leur entreprise en ligne.</p>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold mb-4 text-gold-400">Pages</h4>
+                    <div class="flex flex-col gap-2">
+                        <a href="../fr/index.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Accueil</a>
+                        <a href="../fr/services.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Services</a>
+                        <a href="../fr/portfolio.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Portfolio</a>
+                        <a href="../fr/pricing.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Tarifs</a>
+                        <a href="../fr/process.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Processus</a>
                     </div>
                 </div>
-
-                <!-- Quick Links -->
                 <div>
-                    <h4 class="text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-4">Services</h4>
-                    <ul class="space-y-2.5">
-                        <li><a href="../fr/services.html" class="text-sm text-zinc-500 hover:text-gold-500 transition-colors">Création de Sites Web</a></li>
-                        <li><a href="../fr/services.html" class="text-sm text-zinc-500 hover:text-gold-500 transition-colors">Optimisation SEO</a></li>
-                        <li><a href="../fr/services.html" class="text-sm text-zinc-500 hover:text-gold-500 transition-colors">Marketing Digital</a></li>
-                        <li><a href="../fr/services.html" class="text-sm text-zinc-500 hover:text-gold-500 transition-colors">Lancement d'Entreprise</a></li>
-                        <li><a href="../fr/services.html" class="text-sm text-zinc-500 hover:text-gold-500 transition-colors">Automatisation</a></li>
-                    </ul>
+                    <h4 class="text-sm font-semibold mb-4 text-gold-400">Services</h4>
+                    <div class="flex flex-col gap-2">
+                        <a href="../fr/services.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Création de Sites Web</a>
+                        <a href="../fr/services.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Optimisation SEO</a>
+                        <a href="../fr/services.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Marketing Digital</a>
+                        <a href="../fr/services.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Lancement d'Entreprise</a>
+                    </div>
                 </div>
-
-                <!-- Company -->
                 <div>
-                    <h4 class="text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-4">Company</h4>
-                    <ul class="space-y-2.5">
-                        <li><a href="../fr/index.html" class="text-sm text-zinc-500 hover:text-gold-500 transition-colors">Accueil</a></li>
-                        <li><a href="../fr/about.html" class="text-sm text-zinc-500 hover:text-gold-500 transition-colors">À Propos</a></li>
-                        <li><a href="../fr/portfolio.html" class="text-sm text-zinc-500 hover:text-gold-500 transition-colors">Portfolio</a></li>
-                        <li><a href="../fr/services.html" class="text-sm text-zinc-500 hover:text-gold-500 transition-colors">Services</a></li>
-                        <li><a href="../fr/contact.html" class="text-sm text-zinc-500 hover:text-gold-500 transition-colors">Contact</a></li>
-                    </ul>
+                    <h4 class="text-sm font-semibold mb-4 text-gold-400">Contact</h4>
+                    <div class="flex flex-col gap-2">
+                        <a href="tel:+32485050654" class="text-sm text-zinc-400 hover:text-white transition-colors">+32 485 050 654</a>
+                        <a href="mailto:hb.globalsolutions@icloud.com" class="text-sm text-zinc-400 hover:text-white transition-colors">hb.globalsolutions@icloud.com</a>
+                        <a href="https://wa.me/32485050654" class="text-sm text-zinc-400 hover:text-white transition-colors">WhatsApp</a>
+                    </div>
                 </div>
             </div>
-
-            <div class="border-t border-zinc-800 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
-                <p class="text-xs text-zinc-600">&copy; 2026 HB Global Solutions. Tous droits réservés.</p>
-                <div class="flex items-center gap-4">
-                    <a href="#" class="text-zinc-600 hover:text-gold-500 transition-colors">
-                        <iconify-icon icon="mdi:instagram" width="20" height="20"></iconify-icon>
-                    </a>
-                    <a href="#" class="text-zinc-600 hover:text-gold-500 transition-colors">
-                        <iconify-icon icon="mdi:linkedin" width="20" height="20"></iconify-icon>
-                    </a>
-                    <a href="#" class="text-zinc-600 hover:text-gold-500 transition-colors">
-                        <iconify-icon icon="mdi:facebook" width="20" height="20"></iconify-icon>
-                    </a>
+            <div class="border-t border-zinc-800 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
+                <p class="text-xs text-zinc-500">&copy; 2024 HB Global Solutions. Tous droits réservés.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="text-xs text-zinc-500 hover:text-white transition-colors">Politique de Confidentialité</a>
+                    <a href="#" class="text-xs text-zinc-500 hover:text-white transition-colors">Conditions d'Utilisation</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- ============================================ -->
-    <!-- FAQ Toggle Script -->
-    <!-- ============================================ -->
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/32485050654" target="_blank" rel="noopener" class="fixed bottom-8 left-8 w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-all duration-300 z-50">
+        <iconify-icon icon="mdi:whatsapp" width="28" height="28"></iconify-icon>
+    </a>
+
+    <!-- Back to top -->
+    <button onclick="window.scrollTo({top:0,behavior:'smooth'})" id="backToTop" class="fixed bottom-8 right-8 w-10 h-10 bg-gold-500 text-white rounded-full shadow-lg flex items-center justify-center hover:bg-gold-600 transition-all z-50 opacity-0 pointer-events-none">
+        <iconify-icon icon="solar:arrow-up-linear" width="18" height="18"></iconify-icon>
+    </button>
+
     <script>
-        function toggleFaq(btn) {
-            const content = btn.nextElementSibling;
-            const icon = btn.querySelector('.faq-icon');
-            const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
-
-            // Close all other FAQs
-            document.querySelectorAll('.faq-content').forEach(c => {
-                c.style.maxHeight = '0px';
-            });
-            document.querySelectorAll('.faq-icon').forEach(i => {
-                i.style.transform = 'rotate(0deg)';
-            });
-
-            if (!isOpen) {
-                content.style.maxHeight = content.scrollHeight + 'px';
-                icon.style.transform = 'rotate(180deg)';
-            }
-        }
-    </script>
-
-    <!-- ============================================ -->
-    <!-- SCROLL ANIMATIONS (IntersectionObserver) -->
-    <!-- ============================================ -->
-    <script>
+        // Scroll animations
         document.addEventListener('DOMContentLoaded', () => {
-            // IntersectionObserver for scroll animations
             const scrollElements = document.querySelectorAll('[data-scroll]');
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -554,148 +282,47 @@
                         observer.unobserve(entry.target);
                     }
                 });
-            }, {
-                threshold: 0.1,
-                rootMargin: '0px 0px -40px 0px'
-            });
+            }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
             scrollElements.forEach(el => observer.observe(el));
 
-            // Mobile menu toggle
-            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-            const mobileMenu = document.getElementById('mobileMenu');
-            const bar1 = document.getElementById('bar1');
-            const bar2 = document.getElementById('bar2');
-            const bar3 = document.getElementById('bar3');
-            let menuOpen = false;
-
-            mobileMenuBtn.addEventListener('click', () => {
-                menuOpen = !menuOpen;
-                mobileMenu.classList.toggle('open');
-                if (menuOpen) {
-                    bar1.style.transform = 'rotate(45deg) translate(4px, 4px)';
-                    bar2.style.opacity = '0';
-                    bar3.style.transform = 'rotate(-45deg) translate(4px, -4px)';
-                } else {
-                    bar1.style.transform = 'none';
-                    bar2.style.opacity = '1';
-                    bar3.style.transform = 'none';
-                }
-            });
-
-            // Navbar scroll effect + progress bar + back-to-top
-            const progressBar = document.getElementById('scrollProgress');
-            const backToTop = document.getElementById('backToTop');
-            const nav = document.querySelector('nav');
-
+            // Back to top
+            const btn = document.getElementById('backToTop');
             window.addEventListener('scroll', () => {
-                const currentScroll = window.scrollY;
-                if (currentScroll > 80) {
-                    nav.classList.add('shadow-lg');
-                    nav.style.backdropFilter = 'blur(12px)';
+                if (window.scrollY > 400) {
+                    btn.style.opacity = '1';
+                    btn.style.pointerEvents = 'auto';
                 } else {
-                    nav.classList.remove('shadow-lg');
-                    nav.style.backdropFilter = 'blur(8px)';
-                }
-
-                // Progress bar
-                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-                const scrollPercent = (currentScroll / docHeight) * 100;
-                progressBar.style.width = scrollPercent + '%';
-
-                // Back to top visibility
-                if (currentScroll > 500) {
-                    backToTop.classList.remove('opacity-0', 'pointer-events-none');
-                    backToTop.classList.add('opacity-100');
-                } else {
-                    backToTop.classList.add('opacity-0', 'pointer-events-none');
-                    backToTop.classList.remove('opacity-100');
+                    btn.style.opacity = '0';
+                    btn.style.pointerEvents = 'none';
                 }
             }, { passive: true });
 
-            // Back to top click
-            backToTop.addEventListener('click', () => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-
-            // Contact form submit handler
-            const contactForm = document.getElementById('contactForm');
-            contactForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const btn = contactForm.querySelector('button[type="submit"]');
-                const originalText = btn.innerHTML;
-                btn.innerHTML = '<iconify-icon icon="solar:check-circle-bold" width="20" height="20"></iconify-icon> <span>Message Sent!</span>';
-                btn.classList.remove('bg-gold-500', 'hover:bg-gold-600');
-                btn.classList.add('bg-green-500');
-                btn.disabled = true;
-                setTimeout(() => {
-                    btn.innerHTML = originalText;
-                    btn.classList.remove('bg-green-500');
-                    btn.classList.add('bg-gold-500', 'hover:bg-gold-600');
-                    btn.disabled = false;
-                    contactForm.reset();
-                }, 3000);
-            });
+            // Navbar shadow
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 80) {
+                    nav.classList.add('shadow-lg');
+                } else {
+                    nav.classList.remove('shadow-lg');
+                }
+            }, { passive: true });
         });
     </script>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-gold-500 text-white rounded-full shadow-lg shadow-gold-500/30 flex items-center justify-center hover:bg-gold-600 transition-all duration-300 opacity-0 pointer-events-none z-50 hover:scale-110">
-        <iconify-icon icon="solar:arrow-up-linear" width="20" height="20"></iconify-icon>
-    </button>
-
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/32485050654" target="_blank" rel="noopener" id="whatsappBtn" class="fixed bottom-8 left-8 w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg shadow-[#25D366]/30 flex items-center justify-center hover:scale-110 transition-all duration-300 z-50 opacity-0 pointer-events-none">
-        <iconify-icon icon="mdi:whatsapp" width="28" height="28"></iconify-icon>
-    </a>
-
-    <!-- Cookie Consent Banner -->
-    <div id="cookieBanner" class="fixed bottom-0 left-0 right-0 z-[9998] transition-transform duration-500 translate-y-full">
-        <div class="max-w-6xl mx-auto px-6 pb-6">
-            <div class="bg-zinc-900 rounded-2xl p-6 md:p-8 shadow-2xl border border-zinc-800 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8">
-                <div class="flex-1">
-                    <div class="flex items-center gap-2 mb-2">
-                        <iconify-icon icon="solar:cookie-bold-duotone" width="20" height="20" class="text-gold-400"></iconify-icon>
-                        <h4 class="text-sm font-semibold text-white">We value your privacy</h4>
-                    </div>
-                    <p class="text-xs text-zinc-400 leading-relaxed">
-                        Nous utilisons des cookies to enhance your browsing experience, analyze site traffic, and personalize content. By clicking "Tout Accepter", you consent to our use of cookies in accordance with GDPR.
-                    </p>
-                </div>
-                <div class="flex items-center gap-3 flex-shrink-0">
-                    <button onclick="acceptCookies('essential')" class="px-4 py-2.5 text-xs font-semibold text-zinc-400 border border-zinc-700 rounded-lg hover:border-zinc-500 hover:text-white transition-colors">
-                        Essential Only
-                    </button>
-                    <button onclick="acceptCookies('all')" class="px-5 py-2.5 text-xs font-semibold text-zinc-900 bg-gold-400 rounded-lg hover:bg-gold-500 transition-colors">
-                        Tout Accepter
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <script>
-        // Cookie consent
-        function acceptCookies(type) {
-            localStorage.setItem('cookieConsent', type);
-            document.getElementById('cookieBanner').classList.add('translate-y-full');
+        const form = document.getElementById('contactForm');
+        if (form) {
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const btn = document.getElementById('submitBtn');
+                btn.disabled = true; btn.textContent = 'Envoi en cours...';
+                try {
+                    const res = await fetch(this.action, { method: 'POST', body: new FormData(this), headers: {'Accept': 'application/json'} });
+                    if (res.ok) { document.getElementById('formSuccess').classList.remove('hidden'); this.reset(); }
+                } catch(err) {}
+                btn.disabled = false; btn.textContent = 'Envoyer';
+            });
         }
-        // Show banner if no consent
-        if (!localStorage.getItem('cookieConsent')) {
-            setTimeout(() => {
-                document.getElementById('cookieBanner').classList.remove('translate-y-full');
-            }, 2000);
-        }
-        // WhatsApp button visibility
-        const waBtn = document.getElementById('whatsappBtn');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 500) {
-                waBtn.classList.remove('opacity-0', 'pointer-events-none');
-                waBtn.classList.add('opacity-100');
-            } else {
-                waBtn.classList.add('opacity-0', 'pointer-events-none');
-                waBtn.classList.remove('opacity-100');
-            }
-        }, { passive: true });
     </script>
 
 </body>
