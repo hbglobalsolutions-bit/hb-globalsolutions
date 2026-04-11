@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" style="stop-color:#FAFAF8"/>
+      <stop offset="100%" style="stop-color:#F5ECD3"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" style="stop-color:#C5A55A"/>
+      <stop offset="100%" style="stop-color:#D4B155"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Gold top bar -->
+  <rect width="1200" height="4" fill="url(#gold)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="1050" cy="150" r="80" fill="none" stroke="#C5A55A" stroke-width="1" opacity="0.2"/>
+  <circle cx="1100" cy="400" r="40" fill="#C5A55A" opacity="0.05"/>
+  <circle cx="150" cy="500" r="60" fill="none" stroke="#C5A55A" stroke-width="1" opacity="0.15"/>
+  <circle cx="100" cy="120" r="20" fill="#C5A55A" opacity="0.08"/>
+  
+  <!-- Logo box -->
+  <rect x="80" y="180" width="56" height="56" rx="4" fill="none" stroke="#C5A55A" stroke-width="2.5"/>
+  <text x="108" y="215" font-family="Georgia, serif" font-weight="bold" font-size="22" fill="#C5A55A" text-anchor="middle">HB</text>
+  
+  <!-- Company name -->
+  <text x="152" y="200" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="600" font-size="18" fill="#27272a" letter-spacing="0.5">HB Global Solutions</text>
+  <text x="152" y="225" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="400" font-size="13" fill="#a1a1aa" letter-spacing="0.5">DIGITAL AGENCY • BELGIUM</text>
+  
+  <!-- Main heading -->
+  <text x="80" y="320" font-family="Georgia, serif" font-weight="700" font-size="52" fill="#18181b">Build, Launch &amp; Grow</text>
+  <text x="80" y="385" font-family="Georgia, serif" font-weight="700" font-size="52" fill="#C5A55A" font-style="italic">Your Business Online</text>
+  
+  <!-- Subtitle -->
+  <text x="80" y="440" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="400" font-size="18" fill="#71717a">Website Creation • SEO • Digital Marketing • Business Launch</text>
+  
+  <!-- CTA badge -->
+  <rect x="80" y="480" width="200" height="44" rx="22" fill="#C5A55A"/>
+  <text x="180" y="507" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="600" font-size="13" fill="white" text-anchor="middle" letter-spacing="1.5">FREE CONSULTATION</text>
+  
+  <!-- URL -->
+  <text x="80" y="580" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="500" font-size="16" fill="#C5A55A">hb-globalsolutions.com</text>
+  
+  <!-- Bottom gold bar -->
+  <rect y="626" width="1200" height="4" fill="url(#gold)"/>
+</svg>
